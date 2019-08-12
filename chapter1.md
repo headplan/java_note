@@ -54,5 +54,43 @@ public class HelloWorld {
 
 #### 从加减乘除到变量
 
+**计算加减乘除**
+
+```java
+public class MathCalc {
+    public static void main(String[] args) {
+        System.out.println(5 + 6);
+        System.out.println(5 - 6);
+        System.out.println(5 * 6);
+        System.out.println(5 / 6.0);
+
+        System.out.println((1 + 2 + 3) * 4 / 5.0);
+        System.out.println(2 * 5 + 2 * 5 * 5 + 2 * 5 * 5 * 5);
+    }
+}
+```
+
+* 字面值\(literal value\)
+* 加减乘除运算符
+
+**基本数据类型\(int\)**
+
+Java中所有的数据都有类型 , 类型决定了存储的形式和占用的存储空间 . 
+
+int用来表示一个整数 , 取值范围在 -2^31 ~ 2^31-1 . 计算出来是-2147483648 ~ 2147483647 . 
+
+```java
+public class Int {
+    public static void main(String[] args) {
+        System.out.println(2147483647);
+        System.out.println(2147483647 + 1);
+    }
+}
+```
+
+**关键字\(key word\)和标示符\(Identifier\)**
+
+**用变量解决问题**
+
 
 
