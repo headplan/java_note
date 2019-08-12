@@ -120,6 +120,27 @@ public class Variable {
 
 #### 从加减乘除到代码块
 
+```java
+public class Variable {
+    public static void main(String[] args) {
+
+        int variable;
+
+        variable = 999;
+
+        int a = 3;
+        int b = 5;
+        int c = 7;
+
+        int x = 9;
+
+        int y = a * x + b * x * x + c * x * x * x;
+
+        System.out.println(y);
+    }
+}
+```
+
 **Java代码三级跳 - 表达式 , 语句和代码块**
 
 * **表达式\(expression\)** : Java中最基本的一个运算 . 比如一个加法运算表达式 . 1 + 2是一个表达式 , a + b也是 . 
