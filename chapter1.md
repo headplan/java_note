@@ -90,15 +90,15 @@ public class IntType {
 
 **关键字\(key word\)和标示符\(Identifier\)**
 
-标示符 : 
+标示符 :
 
 * 由大小写英文字符 , 数字和下划线\(\_\)组成的 , 区分大小写的 , 不以数字开头的文字 . 
 * 可以用作Java中的各种东西的名字 , 比如类名 , 方法名等 . 
 * 标示符是区分大小写的 . 
 
-关键字是 Java 语法的保留字 , 不能用来做名字 . 
+关键字是 Java 语法的保留字 , 不能用来做名字 .
 
-前面提到的 : public class static void int 等 . 
+前面提到的 : public class static void int 等 .
 
 **用变量解决问题**
 
@@ -117,6 +117,8 @@ public class Variable {
     }
 }
 ```
+
+#### 从加减乘除到代码块
 
 
 

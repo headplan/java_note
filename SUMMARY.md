@@ -2,7 +2,7 @@
 
 * [关于](README.md)
 * [Java编程基础](chapter1.md)
-  * Java中的基本数据类型
+  * [Java中的基本数据类型](chapter1/javazhong-de-ji-ben-shu-ju-lei-xing.md)
   * Java中的运算符
   * Java中的位运算符
   * 基本数据类型的更多语法点
