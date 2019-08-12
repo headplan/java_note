@@ -75,12 +75,12 @@ public class MathCalc {
 
 **基本数据类型\(int\)**
 
-Java中所有的数据都有类型 , 类型决定了存储的形式和占用的存储空间 . 
+Java中所有的数据都有类型 , 类型决定了存储的形式和占用的存储空间 .
 
-int用来表示一个整数 , 取值范围在 -2^31 ~ 2^31-1 . 计算出来是-2147483648 ~ 2147483647 . 
+int用来表示一个整数 , 取值范围在 -2^31 ~ 2^31-1 . 计算出来是-2147483648 ~ 2147483647 .
 
 ```java
-public class Int {
+public class IntType {
     public static void main(String[] args) {
         System.out.println(2147483647);
         System.out.println(2147483647 + 1);
@@ -90,7 +90,33 @@ public class Int {
 
 **关键字\(key word\)和标示符\(Identifier\)**
 
+标示符 : 
+
+* 由大小写英文字符 , 数字和下划线\(\_\)组成的 , 区分大小写的 , 不以数字开头的文字 . 
+* 可以用作Java中的各种东西的名字 , 比如类名 , 方法名等 . 
+* 标示符是区分大小写的 . 
+
+关键字是 Java 语法的保留字 , 不能用来做名字 . 
+
+前面提到的 : public class static void int 等 . 
+
 **用变量解决问题**
+
+```java
+public class Variable {
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 5;
+        int c = 7;
+
+        int x = 9;
+
+        int y = a * x + b * x * x + c * x * x * x;
+
+        System.out.println(y);
+    }
+}
+```
 
 
 
