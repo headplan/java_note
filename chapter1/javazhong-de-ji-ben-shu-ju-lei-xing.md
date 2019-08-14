@@ -47,5 +47,43 @@
 
 #### 使用各种基本数据类型
 
+```java
+public class PrimaryTypes {
+    public static void main(String[] args) {
+        byte byteVal = 99;
+        System.out.println(byteVal);
+
+        short shortVal = -30000;
+        System.out.println(shortVal);
+
+        int intVal = 300000;
+        System.out.println(intVal);
+
+        long longVal = 999999999999999L;
+        System.out.println(longVal);
+
+        float floatVal = 134.11111111F;
+        System.out.println(floatVal);
+
+        double doubleVal = 100.11111111;
+        System.out.println(doubleVal);
+
+        boolean condition = true;
+        boolean fcondition = false;
+        System.out.println(condition);
+        System.out.println(fcondition);
+
+        char ch = 'A';
+        System.out.println(ch);
+    }
+}
+```
+
+* 例程
+* L后缀
+* 感受浮点数精度
+* 整数缺省是int类型 , 浮点数缺省是double类型
+* 编译错误的定位和修正
+
 
 
