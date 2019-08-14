@@ -51,6 +51,24 @@ public class ModCalc {
 
 #### 整数的除法运算
 
+int除以int还是int , 不会变成浮点数 . 
+
+```java
+public class IntegerDiv {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 3;
+
+        System.out.println(a / b);
+
+        int c = 10;
+        double d = 3.0;
+
+        System.out.println(c / d);
+    }
+}
+```
+
 #### 比较运算符和布尔运算符
 
 #### 小括号运算符
