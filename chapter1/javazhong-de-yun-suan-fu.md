@@ -84,9 +84,26 @@ public class IntegerDiv {
 
 * ! 非运算符
 * & 且运算符
-* && 且且运算符
+* && 且且运算符 \(优化后的&\)
 * \| 或运算符
-* \|\| 或或运算符
+* \|\| 或或运算符\(优化后的\|\)
+
+```java
+public class BooleanOprt {
+    public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(a && b);
+        System.out.println(a & b);
+        System.out.println(a || b);
+        System.out.println(a | b);
+
+        System.out.println(a || (10 / 0 > 1));
+        System.out.println(a | (10 / 0 > 1));
+    }
+}
+```
 
 #### 小括号运算符
 
