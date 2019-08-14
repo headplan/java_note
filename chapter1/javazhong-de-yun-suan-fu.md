@@ -22,6 +22,33 @@ public class OprtNotChangeVariableValue {
 
 #### 取模运算符
 
+* 用来计算余数
+* 负数也可以被取模
+* 负数也可以取模
+* 小数也可以取模
+
+```java
+public class ModCalc {
+    public static void main(String[] args) {
+        int num = 10;
+
+        System.out.println(num % 2);
+        System.out.println(num % -3);
+        System.out.println(num % 4);
+        System.out.println(num % 5);
+        System.out.println(num % -6);
+
+        int fnum = -10;
+
+        System.out.println(fnum % 2);
+        System.out.println(fnum % -3);
+        System.out.println(fnum % 4);
+        System.out.println(fnum % 5);
+        System.out.println(fnum % -6);
+    }
+}
+```
+
 #### 整数的除法运算
 
 #### 比较运算符和布尔运算符
