@@ -51,7 +51,7 @@ public class ModCalc {
 
 #### 整数的除法运算
 
-int除以int还是int , 不会变成浮点数 . 
+int除以int还是int , 不会变成浮点数 .
 
 ```java
 public class IntegerDiv {
@@ -70,6 +70,23 @@ public class IntegerDiv {
 ```
 
 #### 比较运算符和布尔运算符
+
+**比较运算符**
+
+* &gt;
+* &gt;=
+* &lt;
+* &lt;=
+* !=
+* ==
+
+**布尔运算符**
+
+* !
+* &
+* &&
+* \|
+* \|\|
 
 #### 小括号运算符
 
