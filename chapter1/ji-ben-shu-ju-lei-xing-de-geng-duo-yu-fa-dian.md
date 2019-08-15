@@ -78,6 +78,25 @@ public class ForceConvert {
 * 数值计算一旦溢出 , 结果将失去其原有意义 . 比如 , 两个正数会加出负数 . 
 * 要对能够处理的值有大概的估计 . 
 
+```java
+public class ForceConvertValueLoss {
+    public static void main(String[] args) {
+        int intVal = 99;
+        long longVal = 5555555555555L;
+        intVal = (int) longVal;
+
+        System.out.println(intVal);
+
+        float floatVal = 11.32f;
+        double doubleVal = 123456789.0123456;
+
+        floatVal = (float) doubleVal;
+        System.out.println(floatVal);
+        System.out.println(doubleVal);
+    }
+}
+```
+
 #### 从数值计算溢出理解程序员和编程语言
 
 **编程语言的作用**
