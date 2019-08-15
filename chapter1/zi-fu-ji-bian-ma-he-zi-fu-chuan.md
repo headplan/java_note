@@ -23,13 +23,31 @@
 
 **Java中的字符集**
 
-Java中用的是UTF-16编码的Unicode . 
+Java中用的是UTF-16编码的Unicode .
 
-UTF-16用16个bit , 即两个byte , 这也是char占用两个byte的原因 . 当把char转成数字的时候 , 需要用int . 
+UTF-16用16个bit , 即两个byte , 这也是char占用两个byte的原因 . 当把char转成数字的时候 , 需要用int .
 
 #### ASCII码和转义符\(escape character\)
 
+**如何输出特殊字符**
+
+* ASCII码+char , 通过ASCII表可以找到需要的字符对应的数字 . 将这个数字转换为char , 然后输出这个char . ASCII表 : [https://baike.baidu.com/item/ASCII/309296](https://baike.baidu.com/item/ASCII/309296)\#3
+* 转义符 . 转义符用来给字符赋值 , 也可以用在字符串里面 , 作为字符串中的一个字符 . 
+
+**转义符语法和常用的转义符**
+
+* \n - 换行符
+* \" - 双引号
+* \t - 制表符
+* \uXXXX - unicode编码对应的字符
+
 #### 字符串的"加法"
+
+**将变量穿插在字符串中输出**
+
+**字符串不是Java中的基本数据类型**
+
+**String的加法不会改变原String变量的值 , 改变其值要用赋值语句**
 
 
 
