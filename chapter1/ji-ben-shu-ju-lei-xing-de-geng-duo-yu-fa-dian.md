@@ -50,6 +50,29 @@
 * 语法是用小括号括起来的目标类型放在被转换的值前面
 * 强制转换会造成数据精度丢失
 
+```java
+public class ForceConvert {
+    public static void main(String[] args) {
+        int intVal = 99;
+        long longVal = 19999;
+        intVal = (int) longVal;
+
+        System.out.println(intVal);
+
+        float floatVal = 11.32f;
+        double doubleVal = 33445566.7788;
+        floatVal = (float) doubleVal;
+
+        System.out.println(floatVal);
+
+        int a = 65 + 10;
+        char b = (char) a;
+
+        System.out.println(b);
+    }
+}
+```
+
 **数值溢出**
 
 * 数值计算一旦溢出 , 结果将失去其原有意义 . 比如 , 两个正数会加出负数 . 
