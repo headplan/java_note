@@ -13,9 +13,21 @@
 * 将一个字符集映射到数字 , 就是给这个字符集编码 . 编码是有标准的 , 所有的计算机系统按照同一个编码标准执行 . 
 * 有时候编码和字符集会混用 . 
 
-
-
 #### 编码和字符集介绍
+
+**常用的字符集简介**
+
+ASCII码 , ASCII表 : [https://baike.baidu.com/item/ASCII/309296](https://baike.baidu.com/item/ASCII/309296)
+
+Unicode 包含世界上所有常用字符 , 编码也有几种 , 包括UTF-8\(8-bit Unicode Transformation Format\) , UTF-16等 . 
+
+Unicode , GBK等所有常用的字符集 , 都会兼容ASCII . 举个例子 , 字符A在这些所有常用的字符集里 , 都是对应数字65 . 
+
+**Java中的字符集**
+
+Java中用的是UTF-16编码的Unicode
+
+
 
 #### ASCII码和转义符\(escape character\)
 
