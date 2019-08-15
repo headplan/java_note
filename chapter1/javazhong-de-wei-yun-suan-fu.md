@@ -71,5 +71,7 @@ public class BitShift {
 
 #### 位运算符用处
 
+按位运算符 : 掩码\(MASK\)
 
+位移运算符 : 高效除以2
 
