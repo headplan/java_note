@@ -74,5 +74,31 @@ public class BitShift {
 * 按位运算符 : 掩码\(MASK\)
 * 位移运算符 : 高效除以2\(右移除2 , 左移乘2\)
 
+```java
+public class BitOprtUsage {
+    public static void main(String[] args) {
+        int base = 1;
+        int is_student_mask = base; // 0001
+        int is_programmer_mask = base << 1; // 0010
+        int is_driver_mask = base << 2; // 0100
+        int is_painter_mask = base << 3; // 1000
+
+        int data = 5; // 0101
+        // 0101 & 0001
+        boolean isStudent = (data & is_student_mask) != 0;
+        System.out.println(isStudent);
+        // 0101 & 0010
+        boolean isProgrammer = (data & is_programmer_mask) != 0;
+        System.out.println(isProgrammer);
+        // 0101 & 0100
+        boolean isDriver = (data & is_driver_mask) != 0;
+        System.out.println(isDriver);
+        // 0101 & 1000
+        boolean isPainter = (data & is_painter_mask) != 0;
+        System.out.println(isPainter);
+    }
+}
+```
+
 
 
