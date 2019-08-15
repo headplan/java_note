@@ -19,6 +19,21 @@
 * 按位异或\(XOR\) ^ : 两个位不一样就是1 , 两个位一样就是0 . 
 * 按位取反 ~ : 只要1个操作数 , 把每一位都取反 . 
 
+```java
+public class BitCalc {
+    public static void main(String[] args) {
+        int a = 0xF8; // 二进制:1111 1000
+        int b = 0xF4; // 二进制:1111 0100
+        int c = 0xFF; // 二进制:1111 1111
+        System.out.println(a & b);
+        System.out.println(a | b);
+        System.out.println(a ^ b);
+
+        System.out.println(~c);
+    }
+}
+```
+
 #### 位移运算符
 
 #### 位运算符不会改变原变量的值
