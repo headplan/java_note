@@ -40,6 +40,30 @@ public class BitCalc {
 * &gt;&gt;&gt; : 符号位一起右移 , 左边补0 , 又称无符号右移 . 
 * &lt;&lt; : 左移 , 右边补0 . 左移没有带符号位一说 , 因为符号位在最左侧
 
+```java
+public class BitShift {
+    public static void main(String[] args) {
+        int a = 0x400;
+        System.out.println(a);
+        System.out.println(a >> 1);
+        System.out.println(a >> 2);
+
+        System.out.println(a << 1);
+        System.out.println(a << 2);
+
+        int b = -0x400;
+        System.out.println(b >> 1);
+        System.out.println(b >> 2);
+
+        System.out.println(b << 1);
+        System.out.println(b << 2);
+
+        System.out.println(b >>> 1);
+        System.out.println(b >>> 2);
+    }
+}
+```
+
 #### 位运算符不会改变原变量的值
 
 #### 位运算符用处
