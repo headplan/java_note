@@ -23,9 +23,8 @@
 
 **Java中的字符集**
 
-Java中用的是UTF-16编码的Unicode .
-
-UTF-16用16个bit , 即两个byte , 这也是char占用两个byte的原因 . 当把char转成数字的时候 , 需要用int .
+* Java中用的是UTF-16编码的Unicode .
+* UTF-16用16个bit , 即两个byte , 这也是char占用两个byte的原因 . 当把char转成数字的时候 , 需要用int .
 
 #### ASCII码和转义符\(escape character\)
 
@@ -48,6 +47,4 @@ UTF-16用16个bit , 即两个byte , 这也是char占用两个byte的原因 . 当
 **字符串不是Java中的基本数据类型**
 
 **String的加法不会改变原String变量的值 , 改变其值要用赋值语句**
-
-
 
