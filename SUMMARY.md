@@ -8,7 +8,7 @@
   * [基本数据类型的更多语法点](chapter1/ji-ben-shu-ju-lei-xing-de-geng-duo-yu-fa-dian.md)
   * [字符集编码和字符串](chapter1/zi-fu-ji-bian-ma-he-zi-fu-chuan.md)
   * [操作符和数据类型总结](chapter1/cao-zuo-fu-he-shu-ju-lei-xing-zong-jie.md)
-  * 程序执行流程之if-else
+  * [程序执行流程之if-else](chapter1/cheng-xu-zhi-xing-liu-cheng-zhi-if-else.md)
   * 程序循环之for语句
   * 代码块和变量的作用域
   * 程序循环之while语句
