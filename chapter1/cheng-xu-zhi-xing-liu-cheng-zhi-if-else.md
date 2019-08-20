@@ -46,44 +46,30 @@ if (boolean) {
 ```java
 package Procedure;
 
-public class MaxNum {
+public class IfElseNestSimple {
     public static void main(String[] args) {
         int a = 10;
-        int b = 99;
-        int c = 99;
+        int b = 999;
+        int c = 999;
 
+        System.out.println("a=" + a + ". b=" + b + ". c=" + c);
         if (a == b && b == c) {
-            System.out.println("a,b和c等大,大小为" + a);
-        } else {
-            if (a > b) {
-                if (a > c) {
-                    System.out.println("a是最大的值,大小为" + a);
-                } else {
-                    if (a == c) {
-                        System.out.println("a和c是最大的值, 大小为" + a);
-                    } else {
-                        System.out.println("c是最大值,大小为" + c);
-                    }
-                }
-            } else {
-                if (a > c) {
-                    if (a == b) {
-                        System.out.println("a和b是最大的值,大小为" + b);
-                    } else {
-                        System.out.println("b最大,大小为" + b);
-                    }
-                } else {
-                    if (c == b) {
-                        System.out.println("b和c等大,大小为" + c);
-                    } else {
-                        System.out.println("c最大,大小为" + c);
-                    }
-                }
-            }
+            System.out.println("a,b和c相等.");
+        } else if (a > b && a > c) {
+            System.out.println("a的值最大.");
+        } else if (b > a && b > c) {
+            System.out.println("b的值最大.");
+        } else if (c > a && c > b) {
+            System.out.println("c的值最大.");
+        } else if (a == b && b > c) {
+            System.out.println("a和b相等且最大.");
+        } else if (b == c && b > a) {
+            System.out.println("b和c相等且最大.");
+        } else if (a == c && a > b) {
+            System.out.println("a和c相等且最大");
         }
     }
 }
-
 ```
 
 #### if-else的简化
