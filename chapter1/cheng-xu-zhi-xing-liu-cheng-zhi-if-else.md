@@ -43,6 +43,49 @@ if (boolean) {
 * if-else就是一个语句 , 可以是另一个语句的一部分 , 也可以是if-else的一部分 , 即嵌套 . 
 * 求a , b和c三个数的最大数 . 
 
+```java
+package Procedure;
+
+public class MaxNum {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 99;
+        int c = 99;
+
+        if (a == b && b == c) {
+            System.out.println("a,b和c等大,大小为" + a);
+        } else {
+            if (a > b) {
+                if (a > c) {
+                    System.out.println("a是最大的值,大小为" + a);
+                } else {
+                    if (a == c) {
+                        System.out.println("a和c是最大的值, 大小为" + a);
+                    } else {
+                        System.out.println("c是最大值,大小为" + c);
+                    }
+                }
+            } else {
+                if (a > c) {
+                    if (a == b) {
+                        System.out.println("a和b是最大的值,大小为" + b);
+                    } else {
+                        System.out.println("b最大,大小为" + b);
+                    }
+                } else {
+                    if (c == b) {
+                        System.out.println("b和c等大,大小为" + c);
+                    } else {
+                        System.out.println("c最大,大小为" + c);
+                    }
+                }
+            }
+        }
+    }
+}
+
+```
+
 #### if-else的简化
 
 **if-else省略大括号**
@@ -55,7 +98,7 @@ if (boolean)
     if 语句块
 else
     else 语句块
-    
+
 if (boolean) {
     if 语句块
 } else if () {
