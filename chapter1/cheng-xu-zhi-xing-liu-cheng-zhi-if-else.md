@@ -45,5 +45,25 @@ if (boolean) {
 
 #### if-else的简化
 
+**if-else省略大括号**
+
+* 如果if或者else的语句块只有一个语句 , 可以省略大括号
+* 简化求最大数的程序
+
+```java
+if (boolean)
+    if 语句块
+else
+    else 语句块
+    
+if (boolean) {
+    if 语句块
+} else if () {
+    if 语句块
+} else {
+    else 语句块
+}
+```
+
 
 
