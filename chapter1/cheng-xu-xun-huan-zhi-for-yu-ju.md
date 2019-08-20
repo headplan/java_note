@@ -16,6 +16,18 @@ for (初始语句;循环体条件表达式;循环体后语句) {
 }
 ```
 
+```java
+package Procedure;
+
+public class SimpleFor {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i的值是" + i);
+        }
+    }
+}
+```
+
 #### 简化并增强找整除数的程序
 
 * 使用for语句让程序简洁
