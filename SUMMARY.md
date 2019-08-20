@@ -10,7 +10,7 @@
   * [操作符和数据类型总结](chapter1/cao-zuo-fu-he-shu-ju-lei-xing-zong-jie.md)
   * [程序执行流程之if-else](chapter1/cheng-xu-zhi-xing-liu-cheng-zhi-if-else.md)
   * [程序循环之for语句](chapter1/cheng-xu-xun-huan-zhi-for-yu-ju.md)
-  * 代码块和变量的作用域
+  * [代码块和变量的作用域](chapter1/dai-ma-kuai-he-bian-liang-de-zuo-yong-yu.md)
   * 程序循环之while语句
   * 程序执行流程之switch语句
   * [循环和判断的总结](chapter1/xun-huan-he-pan-duan-de-zong-jie.md)
