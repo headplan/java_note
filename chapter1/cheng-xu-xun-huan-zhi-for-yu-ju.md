@@ -28,6 +28,21 @@ public class SimpleFor {
 }
 ```
 
+```java
+package Procedure;
+
+public class PrintChars {
+    public static void main(String[] args) {
+        char ch = 'A';
+        int startNum = ch;
+        for (int i = 0; i < 26; i++) {
+            int newNum = startNum + i;
+            System.out.println(newNum + "\t" + ((char) newNum));
+        }
+    }
+}
+```
+
 #### 简化并增强找整除数的程序
 
 * 使用for语句让程序简洁
