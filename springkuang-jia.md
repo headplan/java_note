@@ -50,5 +50,9 @@
 * 服务追踪
 * ...
 
+#### 跟着Spring了解技术趋势
 
+**Spring 5.x的改变暗示了什么**
+
+![](/assets/spring5x.png)
 
