@@ -50,6 +50,26 @@ public class PrintChars {
 * 条件布尔表达式可以用for语句外部的变量
 * 循环体执行后的语句可以有多个表达式 , 用逗号分开
 
+```java
+package Procedure;
+
+public class CalcDivForWithLimit {
+    public static void main(String[] args) {
+        int divided = 1;
+        int divisor = 3;
+
+        int found = 0;
+        for (int i = 0; i < 100 && found < 10; i++) {
+            if (divided % divisor == 0) {
+                System.out.println(divided + "可以整除" + divisor + ", 商为" + divided);
+                found++;
+            }
+            divided++;
+        }
+    }
+}
+```
+
 #### break语句
 
 **结束循环**
