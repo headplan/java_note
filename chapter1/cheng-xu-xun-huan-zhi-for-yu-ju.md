@@ -77,6 +77,31 @@ public class CalcDivForWithLimit {
 * break语句可以结束循环
 * 在求整除程序中使用break提前结束循环
 
+```java
+package Procedure;
+
+public class CalcDivForWithLimit {
+    public static void main(String[] args) {
+        int divided = 1;
+        int divisor = 3;
+
+        int found = 0;
+        int toBeFound = 10;
+        for (int i = 0; i < 100 && found < 10; i++) {
+            if (divided % divisor == 0) {
+                System.out.println(divided + "可以整除" + divisor + ", 商为" + divided);
+                found++;
+            }
+            if (found >= toBeFound) {
+                System.out.println("已经找到" + toBeFound + "个数,循环退出.");
+                break;
+            }
+            divided++;
+        }
+    }
+}
+```
+
 #### continue语句
 
 **跳过不符合条件的循环**
