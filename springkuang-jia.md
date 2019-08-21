@@ -56,3 +56,13 @@
 
 ![](/assets/spring5x.png)
 
+**Spring Boot和Spring Cloud的出现是必然的**
+
+* 开箱即⽤
+* 与⽣态圈的深度整合
+* 注重运维
+* Cloud Native的大方向
+* 最佳实践不嫌多 , 固化到系统实现中才是王道
+
+
+
