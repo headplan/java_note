@@ -30,5 +30,10 @@ switch (用于比较的int值) {
 
 #### switch语句语法点总结
 
+* switch语句中用于比较的值 , 必须是int类型
+* switch语句适用于有固定多个目标值匹配 , 然后执行不同的逻辑的情况
+* 必须使用break语句显示的结束一个case子句 , 否则switch语句会从第一个match的case语句开始执行直到遇到break语句或者switch语句结束
+* default子句是可选的 , 如果所有的case语句都没有匹配上 , 才会执行default中的代码
+
 
 
