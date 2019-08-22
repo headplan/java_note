@@ -69,7 +69,7 @@ public class DoWhileExample {
 #### 一个看似死循环却不是死循环的例子
 
 * 用while找出5个能被2000000000整除的数
-* 程序最终还是结束了 , 但是结果并不是我们想要的
+* 程序最终还是结束了 , 但是结果并不是我们想要的 , 溢出了 . 
 
 ```java
 package Procedure;
