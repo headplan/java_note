@@ -22,6 +22,51 @@ Math.random\(\)生成随机数 , 随机数在0到1之间 , 类型是double
 * 使用强制类型转换
 * 确保生成的数字在指定的范围内 . 边界思维 , 假设随机数是0或者1 , 结果是多少 ? 假设取模后是0或者mod-1 , 结果会是多少 ?
 
+```java
+package Procedure;
+
+public class RandomNumber {
+    public static void main(String[] args) {
+        double randNum = 0;
+
+        // 要生成一个大于0.5的随机数,只有随机数大于0.5,循环才退出
+        while (randNum < 0.5) {
+            // 使用Java中的Math.random(),生成一个随机数
+            randNum = Math.random();
+            System.out.println(randNum);
+        }
+
+        System.out.println("大于0.5的随机数是" + randNum);
+
+        int rangeStart = 99;
+        int rangeEnd = 180;
+
+        int mod = rangeEnd - rangeStart;
+        if (rangeStart < 0 || rangeEnd < 0) {
+            System.out.println("开始和结束必须是正数或者0");
+        }
+
+        if (mod <= 1) {
+            System.out.println("非法的数字范围:(" + rangeStart + "," + rangeEnd + ")");
+        }
+
+        for (int i = 0; i < 20; i++) {
+            int bigRandom = (int) (Math.random() * rangeEnd * 100);
+            // 随机的比较大的数取模,加上起始的数就是99-180之间的随机数
+            int numberToGuess = (bigRandom % mod) + rangeStart;
+
+            if (numberToGuess <= rangeStart) {
+                numberToGuess = rangeStart + 1;
+            } else if (numberToGuess > rangeEnd) {
+                numberToGuess = rangeEnd - 1;
+            }
+
+            System.out.println("mod=" + mod + ", numberToGuess=" + numberToGuess + ", bigRandom=" + bigRandom);
+        }
+    }
+}
+```
+
 #### 从标准输出读取字符串和整数
 
 **新功能**
