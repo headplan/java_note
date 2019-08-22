@@ -12,7 +12,7 @@
   * [程序循环之for语句](chapter1/cheng-xu-xun-huan-zhi-for-yu-ju.md)
   * [代码块和变量的作用域](chapter1/dai-ma-kuai-he-bian-liang-de-zuo-yong-yu.md)
   * [程序循环之while语句](chapter1/cheng-xu-xun-huan-zhi-while-yu-ju.md)
-  * 程序执行流程之switch语句
+  * [程序执行流程之switch语句](chapter1/cheng-xu-zhi-xing-liu-cheng-zhi-switch-yu-ju.md)
   * [循环和判断的总结](chapter1/xun-huan-he-pan-duan-de-zong-jie.md)
   * 使用数组
   * 认识变量和数组
