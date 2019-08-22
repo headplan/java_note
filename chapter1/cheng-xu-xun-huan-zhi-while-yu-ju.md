@@ -17,6 +17,15 @@ while (条件表达式) {
 
 #### do-while语句 - 至少执行一次
 
+* do-while语句语法
+* do-while语句的循环体至少执行一次
+
+```java
+do {
+    while循环体
+} while (条件表达式)
+```
+
 #### 死循环 \(endless loop\)
 
 #### 一个看似死循环却不是死循环的例子
