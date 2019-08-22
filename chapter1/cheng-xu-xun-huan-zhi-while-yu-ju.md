@@ -71,6 +71,27 @@ public class DoWhileExample {
 * 用while找出5个能被2000000000整除的数
 * 程序最终还是结束了 , 但是结果并不是我们想要的
 
+```java
+package Procedure;
+
+public class FindNDivNotEndless {
+    public static void main(String[] args) {
+        int n = 5;
+        int dividend = 100;
+        int divisor = 2000000000;
+        int found = 0;
+
+        while (found < n) {
+            if (dividend % divisor == 0) {
+                System.out.println(dividend + "可以整除" + divisor + ".商是" + dividend);
+                found++;
+            }
+            dividend++;
+        }
+    }
+}
+```
+
 #### 使用break语句结束循环
 
 * break语句可以结束任何循环
