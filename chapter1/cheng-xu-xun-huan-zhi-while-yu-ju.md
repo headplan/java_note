@@ -48,6 +48,18 @@ do {
 } while (条件表达式)
 ```
 
+```java
+package Procedure;
+
+public class DoWhileExample {
+    public static void main(String[] args) {
+        do {
+            System.out.println("会执行一次");
+        } while (false);
+    }
+}
+```
+
 #### 死循环 \(endless loop\)
 
 * 死循环 : 无法结束的循环\(endless loop / infinite loop\)
