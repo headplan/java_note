@@ -15,7 +15,7 @@
   * [程序执行流程之switch语句](chapter1/cheng-xu-zhi-xing-liu-cheng-zhi-switch-yu-ju.md)
   * [循环和判断的总结](chapter1/xun-huan-he-pan-duan-de-zong-jie.md)
   * [使用数组](chapter1/shi-yong-shu-zu.md)
-  * 认识变量和数组
+  * [认识变量和数组](chapter1/ren-shi-bian-liang-he-shu-zu.md)
   * 多维数组
   * [用数组灵活处理程序](chapter1/yong-shu-zu-ling-huo-chu-li-cheng-xu.md)
 * [Java面向对象编程](javamian-xiang-dui-xiang-bian-cheng.md)
