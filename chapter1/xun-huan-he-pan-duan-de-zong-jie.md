@@ -100,7 +100,6 @@ public class ReadStringAndIntFromConsole {
         System.out.println("好的," + str + age + "岁了.");
     }
 }
-
 ```
 
 #### 猜数字的游戏
@@ -120,6 +119,86 @@ Random方法和readInt方法是两个工具，可以完成一个明确具体的�
 * 游戏结束后 , 输出猜数字游戏的统计
 * 没有猜中 , 要输出这次的目标数字
 * 可以设置随机数的范围 , 可以设置最大猜测次数
+
+```java
+package Procedure;
+
+import java.util.Scanner;
+
+public class GuessNumber {
+    public static void main(String[] args) {
+        // 创建Scanner从控制台读取输入
+        Scanner in = new Scanner(System.in);
+
+        // 游戏设置
+        int rangeStart = 1;
+        int rangeEnd = 8;
+        int guessTotal = 5; // 允许猜的次数
+
+        // 游戏统计
+        int totalGameCount = 0; // 游戏次数
+        int totalCorrectCount = 0; // 正确次数
+
+        // 是否结束游戏
+        boolean stopGame = false;
+
+        while (!stopGame) {
+            // 生成指定范围内的随机数
+            int mod = rangeEnd - rangeStart;
+            if (rangeStart < 0 || rangeEnd < 0) {
+                System.out.println("开始和结束必须是正数或者0");
+            }
+            if (mod <= 1) {
+                System.out.println("非法的数字范围:(" + rangeStart + "," + rangeEnd + ")");
+            }
+            int bigRandom = (int) (Math.random() * rangeEnd * 100);
+            int numberToGuess = bigRandom % mod + rangeStart;
+            if (numberToGuess <= rangeStart) {
+                numberToGuess = rangeStart + 1;
+            } else if (numberToGuess > rangeEnd) {
+                numberToGuess = rangeEnd - 1;
+            }
+
+            // 剩余的猜测次数
+            int leftToGuess = guessTotal;
+            // 是否记进行游戏并记录次数
+            boolean currentGameCounted = false;
+            boolean currentGuess = false;
+
+            System.out.println("游戏规则:请输入猜测的数字,范围在(" + rangeStart + "," + rangeEnd + ").输入-1代表结束游戏.");
+            while (leftToGuess > 0) {
+                System.out.println("剩余猜测次数" + leftToGuess + ".请输入本次猜测的数字:");
+                int guess = in.nextInt();
+                if (guess < 0) {
+                    stopGame = true;
+                    System.out.println("用户选择结束游戏.");
+                    break;
+                }
+                if (!currentGameCounted) {
+                    totalGameCount++;
+                    currentGameCounted = true;
+                }
+                leftToGuess--;
+
+                if (guess > numberToGuess) {
+                    System.out.println("输入的数字比目标数字大");
+                } else if (guess < numberToGuess) {
+                    System.out.println("输入的数字比目标数字小");
+                } else {
+                    totalCorrectCount++;
+                    currentGuess = true;
+                    System.out.println("输入的数字正确!");
+                    break;
+                }
+            }
+            if (!currentGuess) {
+                System.out.println("本次的目标数字是:" + numberToGuess);
+            }
+            System.out.println("本轮游戏结束!目前共进行了" + totalGameCount + "次游戏, 其中猜中的次数为" + totalCorrectCount);
+        }
+    }
+}
+```
 
 
 
