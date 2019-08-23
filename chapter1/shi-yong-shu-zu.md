@@ -31,5 +31,49 @@
 * 为每门课创建一个int变量 , 值为这门课的成绩对应的数组的索引 , 以便操作每门课的成绩
 * 实现计算最高成绩的逻辑
 
+```java
+package Array;
+
+public class ScoreArrayMaxScore {
+    public static void main(String[] args) {
+        int YuWen = 0;
+        int ShuXue = 1;
+        int WaiYu = 2;
+        int WuLi = 3;
+        int HuaXue = 4;
+        int ShengWu = 5;
+
+        int totScoreCount = 6;
+        double[] scores = new double[totScoreCount];
+
+        String[] ScoreNames = new String[totScoreCount];
+        ScoreNames[YuWen] = "语文";
+        ScoreNames[ShuXue] = "数学";
+        ScoreNames[WaiYu] = "外语";
+        ScoreNames[WuLi] = "物理";
+        ScoreNames[HuaXue] = "化学";
+        ScoreNames[ShengWu] = "生物";
+
+        for (int i = 0; i < totScoreCount; i++) {
+            scores[i] = 80 + Math.random() * 20;
+            System.out.println(ScoreNames[i] + "的成绩是:" + scores[i]);
+        }
+
+        double maxScore = 0;
+        int maxScoreIndex = -1;
+
+        for (int i = 0; i < totScoreCount; i++) {
+            if (scores[i] > maxScore) {
+                maxScore = scores[i];
+                maxScoreIndex = i;
+            }
+        }
+
+        System.out.println("最好成绩科目是" + ScoreNames[maxScoreIndex] + ":" + maxScore);
+    }
+}
+
+```
+
 
 
