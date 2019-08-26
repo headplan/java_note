@@ -40,5 +40,21 @@
 * 如果没有别的数组变量指向原来数组实体 , 也就是说 , 如果没有数组变量"记得"原来数组的地址 , 原来的数组实体就再也不可访问了 , 也就好像"消失"了 . 
 * 对于非基本类型的变量 , 计算机都要通过这种"两级跳"的方式来访问 . 基本类型变量 , 一跳就可以 . 
 
+```java
+package Variable;
+
+public class AssignArray {
+    public static void main(String[] args) {
+        int[] book = new int[3];
+
+        book[0] = 9;
+
+        System.out.println("book长度为" + book.length + ". book[0] = " + book[0]);
+        book = new int[32];
+        System.out.println("book长度为" + book.length + ". book[0] = " + book[0]);
+    }
+}
+```
+
 
 
