@@ -1,6 +1,7 @@
 # Summary
 
 * [关于](README.md)
+* [Java相关书单](javaxiang-guan-shu-dan.md)
 * [Java编程基础](chapter1.md)
   * [Java中的基本数据类型](chapter1/javazhong-de-ji-ben-shu-ju-lei-xing.md)
   * [Java中的运算符](chapter1/javazhong-de-yun-suan-fu.md)
