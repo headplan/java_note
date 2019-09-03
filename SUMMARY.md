@@ -20,6 +20,7 @@
   * [多维数组](chapter1/duo-wei-shu-zu.md)
   * [用数组灵活处理程序](chapter1/yong-shu-zu-ling-huo-chu-li-cheng-xu.md)
 * [Java面向对象编程](javamian-xiang-dui-xiang-bian-cheng.md)
+  * [初探类和对象](javamian-xiang-dui-xiang-bian-cheng/chu-tan-lei-he-dui-xiang.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
