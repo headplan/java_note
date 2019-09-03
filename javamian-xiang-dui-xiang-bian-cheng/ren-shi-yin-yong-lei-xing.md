@@ -56,5 +56,9 @@ public class ReferenceAndPrimaryDataType {
 Merchandise m1 = new Merchandise();
 ```
 
+* 使用new操作符可以创建某个类的一个实例 . 在Java程序运行的时候 , 所有这些创建出来的实例都被Java放在内存里一个叫做堆\(heap\)的地方 . 
+* 创建一个实例 , 就是根据类的定义 , 点出需要的放在内存堆里 . 
+* 引用里存放的 , 相当于内存地的地址 . 
+
 
 
