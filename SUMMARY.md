@@ -22,7 +22,7 @@
 * [Java面向对象编程](javamian-xiang-dui-xiang-bian-cheng.md)
   * [初探类和对象](javamian-xiang-dui-xiang-bian-cheng/chu-tan-lei-he-dui-xiang.md)
   * [认识引用类型](javamian-xiang-dui-xiang-bian-cheng/ren-shi-yin-yong-lei-xing.md)
-  * 类、对象和引用的关系
+  * [类、对象和引用的关系](javamian-xiang-dui-xiang-bian-cheng/lei-3001-dui-xiang-he-yin-yong-de-guan-xi.md)
   * 认识数组类型
 * Java中的异常处理
 * Java中的常用工具类和新语法
