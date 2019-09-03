@@ -50,5 +50,11 @@ public class ReferenceAndPrimaryDataType {
 * 基本类型变量的值 , 就是地址对应的值 . 引用数据类型的值还是一个地址 , 需要通过二级跳找到实例 .
 * 引用数据类型是Java的一种内部类型 , 是对所有自定义类型和数组引用的统称 , 并非特指某种类型 .  
 
+**Java的实例**
+
+```java
+Merchandise m1 = new Merchandise();
+```
+
 
 
