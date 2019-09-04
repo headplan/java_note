@@ -32,10 +32,10 @@ import Phone.Parts.Mainboard;
 import Phone.Parts.Screen;
 
 public class Phone {
-    Screen screen;
-    Mainboard mainboard;
-    double price;
-    boolean hasFigurePrintUnlocker;
+    public Screen screen;
+    public Mainboard mainboard;
+    public double price;
+    public boolean hasFigurePrintUnlocker;
 
     Phone prePhone;
 }
