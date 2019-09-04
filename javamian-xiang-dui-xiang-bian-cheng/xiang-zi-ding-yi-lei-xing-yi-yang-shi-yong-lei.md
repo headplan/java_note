@@ -36,9 +36,12 @@ public class PhoneMaker {
         mainboard.storage = new Storage();
         mainboard.storage.producer = "Intel";
         mainboard.storage.capacity = 256;
+        
+        phone.mainboard = mainboard;
+        // 上一个版本的手机
+        phone.prePhone = new Phone();
     }
 }
-
 ```
 
 
