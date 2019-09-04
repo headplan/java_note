@@ -23,7 +23,10 @@
   * [初探类和对象](javamian-xiang-dui-xiang-bian-cheng/chu-tan-lei-he-dui-xiang.md)
   * [认识引用类型](javamian-xiang-dui-xiang-bian-cheng/ren-shi-yin-yong-lei-xing.md)
   * [类、对象和引用的关系](javamian-xiang-dui-xiang-bian-cheng/lei-3001-dui-xiang-he-yin-yong-de-guan-xi.md)
-  * 认识数组类型
+  * [认识数组类型](javamian-xiang-dui-xiang-bian-cheng/ren-shi-shu-zu-lei-xing.md)
+  * 引用的缺省值null
+  * 像自定义类型一样使用类
+  * Java中的包和访问修饰符
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
