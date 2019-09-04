@@ -25,5 +25,21 @@
 * 包名 + 类名 = 类的全限定名 . 也可以简称为**类的全名** . 
 * 同一个Java程序中全限定名字不可重复 . 
 
+```java
+package Phone;
+
+import Phone.Parts.Mainboard;
+import Phone.Parts.Screen;
+
+public class Phone {
+    Screen screen;
+    Mainboard mainboard;
+    double price;
+    boolean hasFigurePrintUnlocker;
+
+    Phone prePhone;
+}
+```
+
 
 
