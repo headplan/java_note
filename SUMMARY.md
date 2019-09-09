@@ -29,6 +29,7 @@
   * [Java中的包和访问修饰符](javamian-xiang-dui-xiang-bian-cheng/javazhong-de-bao-he-fang-wen-xiu-shi-fu.md)
   * [Java例程](javamian-xiang-dui-xiang-bian-cheng/javali-cheng.md)
   * [Intellij调试程序](javamian-xiang-dui-xiang-bian-cheng/intellijdiao-shi-cheng-xu.md)
+  * [方法 : 让Merchandise对象有行为](javamian-xiang-dui-xiang-bian-cheng/fang-fa-rang-merchandise-dui-xiang-you-xing-wei.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
