@@ -30,6 +30,7 @@
   * [Java例程](javamian-xiang-dui-xiang-bian-cheng/javali-cheng.md)
   * [Intellij调试程序](javamian-xiang-dui-xiang-bian-cheng/intellijdiao-shi-cheng-xu.md)
   * [方法 : 让Merchandise对象有行为](javamian-xiang-dui-xiang-bian-cheng/fang-fa-rang-merchandise-dui-xiang-you-xing-wei.md)
+  * [返回值 : 让Merchandise计算利润](javamian-xiang-dui-xiang-bian-cheng/fan-hui-zhi-rang-merchandise-ji-suan-li-run.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
