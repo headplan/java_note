@@ -2,7 +2,7 @@
 
 #### 方法\(Method\) - 让商品可以描述自己
 
-方法英文名叫method , 又称作function . 
+方法英文名叫method , 又称作function .
 
 ```java
 package com.supermarket.market;
@@ -30,8 +30,13 @@ public class MerchandiseV2 {
         );
     }
 }
-
 ```
+
+**方法的调用**
+
+* 通过引用的点操作符 , 可以调用对象的方法 ; 
+* 方法调用要用括号 , 即使没有参数 ; 
+* 方法可以使用的数据 : 对象的成员变量\(member variable\) ; 
 
 
 
