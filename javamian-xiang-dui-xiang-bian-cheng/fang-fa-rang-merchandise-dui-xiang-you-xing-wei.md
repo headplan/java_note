@@ -32,11 +32,30 @@ public class MerchandiseV2 {
 }
 ```
 
-**方法的调用**
+#### **方法的调用**
 
 * 通过引用的点操作符 , 可以调用对象的方法 ; 
 * 方法调用要用括号 , 即使没有参数 ; 
 * 方法可以使用的数据 : 对象的成员变量\(member variable\) ; 
+
+```java
+package com.supermarket.market;
+
+public class MerchandiseV2DescAppMain {
+    public static void main(String[] args) {
+        MerchandiseV2 merchandise = new MerchandiseV2();
+
+        merchandise.name = "书桌";
+        merchandise.soldPrice = 999.9;
+        merchandise.purchasePrice = 500;
+        merchandise.count = 40;
+        merchandise.id = "DESK9527";
+        merchandise.madein = "China";
+
+        merchandise.describe();
+    }
+}
+```
 
 
 
