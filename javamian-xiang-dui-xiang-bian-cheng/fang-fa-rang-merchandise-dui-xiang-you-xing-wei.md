@@ -13,12 +13,14 @@ public class MerchandiseV2 {
     public int count;
     public double soldPrice;
     public double purchasePrice;
+    public String madein;
 
     // >> TODO 访问修饰符
     // >> TODO 返回值类型:无需返回值则用void表示,void是Java中的关键字
     // >> TODO 方法名:任意合法的标识符都可以
     // >> TODO 参数列表
     // >> TODO 方法体:方法的代码
+    // >> TODO 方法体内部定义的变量叫局部变量
     public void describe() {
         double netIncome = soldPrice - purchasePrice;
         System.out.println(
@@ -26,7 +28,8 @@ public class MerchandiseV2 {
                 "id是" + id + "." +
                 "商品售价是" + soldPrice + "." +
                 "商品进价是" + purchasePrice + "." +
-                "销售一个的毛利润是" + netIncome
+                "销售一个的毛利润是" + netIncome + '.' +
+                "产地" + madein
         );
     }
 }
