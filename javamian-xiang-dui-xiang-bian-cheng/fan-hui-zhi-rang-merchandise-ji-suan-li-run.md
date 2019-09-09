@@ -87,5 +87,13 @@ public class LittleSuperMarket {
 }
 ```
 
+方法调用
+
+```java
+System.out.println("下面是利润最高的商品:");
+// >> TODO 返回值可以直接使用,不必赋值给一个变量再使用
+littleSuperMarket.getBiggestProfitMerchandise().describe();
+```
+
 
 
