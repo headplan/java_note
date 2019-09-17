@@ -7,5 +7,18 @@
   方法里创建的对象是不会随着方法结束被清楚的 . 
   所以对象的地盘不受限制 , 只要有引用指向一个对象 , 这个对象的数据就可以通过这个引用来访问 . 
 
+```java
+// >> TODO 方法的代码可以影响方法之外的数据。我们可以通过指向同一个对象的引用，操作这个对象里的属性
+MerchandiseV2 paramRef = littleSuperMarket.merchandises[2];
+
+m.gift = giftBowl;
+System.out.println("gift变换大法执行前");
+m.describe();
+paramRef.describe();
+m.changeToTheSameGift(paramRef);
+System.out.println("gift变换大法执行后");
+paramRef.describe();
+```
+
 
 
