@@ -25,5 +25,5 @@ public void setCount(int count) {
 }
 ```
 
-
+如果不存在重名的错误 , Java会在编译时加上 . 
 
