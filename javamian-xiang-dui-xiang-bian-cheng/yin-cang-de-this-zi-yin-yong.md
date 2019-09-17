@@ -12,7 +12,9 @@ public void setCount(int count) {
 
 #### 使用this访问局部变量的完整形态
 
-每一个方法都有一个隐藏的this自引用\(自指针\) . 
+当参数和局部变量重名了 , 就可以使用this自引用 . 
+
+每一个方法都有一个隐藏的this自引用\(自指针\) .
 
 ```java
 public void setCount(int count) {
