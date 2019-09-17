@@ -20,5 +20,23 @@ System.out.println("gift变换大法执行后");
 paramRef.describe();
 ```
 
+```java
+// ------ 返回值 -------
+
+// >> TODO 给返回值赋值，并不会影响用来充当返回值的变量
+
+MerchandiseV2 giftOfM;
+
+// >> TODO 可以通过返回值，操作同一个对象
+
+System.out.println("获取m的赠品，并修改这个赠品对象的采购价格");
+System.out.println("修改前");
+m.describe();
+giftOfM = m.getGiftAndHowCanOutsideChangeIt();
+giftOfM.purchasePrice = giftOfM.purchasePrice * 10;
+System.out.println("修改后");
+m.describe();
+```
+
 
 
