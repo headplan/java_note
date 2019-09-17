@@ -33,7 +33,7 @@
   * [返回值 : 让Merchandise计算利润](javamian-xiang-dui-xiang-bian-cheng/fan-hui-zhi-rang-merchandise-ji-suan-li-run.md)
   * [参数 : 让Merchandise计算多件商品的总价](javamian-xiang-dui-xiang-bian-cheng/can-shu-rang-merchandise-ji-suan-duo-jian-shang-pin-de-zong-jia.md)
   * [参数和返回值是怎么传递的](javamian-xiang-dui-xiang-bian-cheng/can-shu-he-fan-hui-zhi-shi-zen-yao-chuan-di-de.md)
-  * [分清参数,局部变量和实例](javamian-xiang-dui-xiang-bian-cheng/fen-qing-can-65702c-ju-bu-bian-liang-he-shi-li.md)
+  * [分清参数,局部变量和对象实例](javamian-xiang-dui-xiang-bian-cheng/fen-qing-can-65702c-ju-bu-bian-liang-he-shi-li.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
