@@ -39,6 +39,7 @@
   * [给类和方法加Java注释](javamian-xiang-dui-xiang-bian-cheng/gei-lei-he-fang-fa-jia-java-zhu-shi.md)
   * [成熟的类的对象:封装](javamian-xiang-dui-xiang-bian-cheng/cheng-shu-de-lei-de-dui-xiang.md)
   * [方法的签名和重载](javamian-xiang-dui-xiang-bian-cheng/fang-fa-de-qian-ming-he-zhong-zai.md)
+  * [构造方法 : 构造实例的方法](javamian-xiang-dui-xiang-bian-cheng/gou-zao-fang-fa-gou-zao-shi-li-de-fang-fa.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
