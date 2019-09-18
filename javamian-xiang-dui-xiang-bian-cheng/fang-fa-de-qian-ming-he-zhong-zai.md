@@ -35,5 +35,18 @@ public double buy(int count, boolean isVIP) {
 
 #### 重载的参数匹配规则
 
+```java
+// >> TODO 方法调用的时候，参数就不必完全类型一样，实参数可以自动类型转换成形参类型即可
+public double buyDouble(double count){
+    System.out.println("buyDouble(double)被调用了");
+    if (this.count < count) {
+        return -1;
+    }
+    this.count -= count;
+    double totalCost = count * soldPrice;
+    return totalCost;
+}
+```
+
 
 
