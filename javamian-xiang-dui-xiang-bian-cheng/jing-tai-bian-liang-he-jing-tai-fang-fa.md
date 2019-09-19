@@ -30,7 +30,6 @@ public class MerchandiseV2DescAppMain {
         //    TODO import static也可以使用通配符*来引入一个类里所有静态变量
         System.out.println(DISCOUNT_FOR_VIP);
         System.out.println(MerchandiseV2WithStaticVariable.DISCOUNT_FOR_VIP);
-
     }
 }
 ```
