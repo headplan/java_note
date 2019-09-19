@@ -48,5 +48,5 @@ MerchandiseV2WithStaticVariable m0 = littleSuperMarket.getMerchandiseOf(0);
 
 #### 静态方法
 
-
+静态方法也叫类方法 . 只能使用参数和静态变量 . 换言之 , 就是没有this自引用的方法 . 
 
