@@ -46,5 +46,7 @@ System.out.println("VIP 购买10个" + bigProfit.getName() + "的花费为" + co
 MerchandiseV2WithStaticVariable m0 = littleSuperMarket.getMerchandiseOf(0);
 ```
 
+#### 静态方法
+
 
 
