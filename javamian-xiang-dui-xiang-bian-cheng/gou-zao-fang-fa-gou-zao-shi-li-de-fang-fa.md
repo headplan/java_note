@@ -62,7 +62,7 @@ public class MerchandiseV2 {
         // double purPrice = soldPrice * 0.8;
     }
 
-    // >> TODO 因为我们添加了构造方法之后,Java就不会再添加无参数的构造方法.如果需要的话,可以自己添加这样的构造方法
+    // >> TODO 因为我们添加了构造方法之后,Java就不会再添加无参数的构造方法.如果需要的话,可以自己添加这样的构造方法.
     public MerchandiseV2() {
         this("无名", "000", 0, 1, 1.1);
     }
