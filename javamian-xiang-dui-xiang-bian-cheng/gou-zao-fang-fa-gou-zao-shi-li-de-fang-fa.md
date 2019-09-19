@@ -75,9 +75,9 @@ public class MerchandiseV2 {
 
     public double calculateProfit() {
         double profit = soldPrice - purchasePrice;
-//        if(profit <= 0){
-//            return 0;
-//        }
+        //  if(profit <= 0){
+        //    return 0;
+        //  }
         return profit;
     }
 
