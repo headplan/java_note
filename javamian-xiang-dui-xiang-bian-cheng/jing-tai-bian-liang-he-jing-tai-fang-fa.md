@@ -87,7 +87,7 @@ public double buy(int count, boolean isVIP) {
 
 #### 静态方法的重载
 
-静态方法的重载和成员方法\(实例方法\)一样 . 
+静态方法的重载和成员方法\(实例方法\)一样 .
 
 ```java
 public class DiscountMgr {
@@ -129,7 +129,6 @@ public class DiscountMgr {
         return a > b ? a : b;
     }
 
-
     public static boolean getDiscount(int a, int b, int c) {
         return a > b && b > c;
     }
@@ -141,9 +140,7 @@ public class DiscountMgr {
     public static void main(String[] args) {
         getDiscount(1, 2);
     }
-
 }
-
 ```
 
 
