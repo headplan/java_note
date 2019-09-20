@@ -1,4 +1,4 @@
-# static代码块和static变量初始化
+# static代码块初始化静态变量
 
 
 

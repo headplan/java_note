@@ -41,7 +41,7 @@
   * [方法的签名和重载](javamian-xiang-dui-xiang-bian-cheng/fang-fa-de-qian-ming-he-zhong-zai.md)
   * [构造方法 : 构造实例的方法](javamian-xiang-dui-xiang-bian-cheng/gou-zao-fang-fa-gou-zao-shi-li-de-fang-fa.md)
   * [静态变量和静态方法](javamian-xiang-dui-xiang-bian-cheng/jing-tai-bian-liang-he-jing-tai-fang-fa.md)
-  * [static代码块和static变量初始化](javamian-xiang-dui-xiang-bian-cheng/staticdai-ma-kuai-he-static-bian-liang.md)
+  * [static代码块初始化静态变量](javamian-xiang-dui-xiang-bian-cheng/staticdai-ma-kuai-he-static-bian-liang.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
