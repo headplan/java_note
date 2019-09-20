@@ -85,5 +85,7 @@ public double buy(int count, boolean isVIP) {
 }
 ```
 
+#### 静态方法的重载
 
+静态方法的重载和成员方法\(实例方法\)一样 . 
 
