@@ -67,5 +67,7 @@ public class LearnScanner {
 }
 ```
 
+> 注释里@since1.5表示它是从Java5才开始有的 , Java后续的版本也都改为1.6叫Java6 , 1.7叫Java7这种大版本号 .
+
 
 
