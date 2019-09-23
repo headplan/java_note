@@ -73,6 +73,7 @@ public class MerchandiseV2 {
 // >> TODO 非public的类,类名可以不和文件名相同
 class NonPublicClassCanUseAnyName {
 }
+// >> TODO 非公有的类,不能在包外被使用
 ```
 
 
