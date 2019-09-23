@@ -34,8 +34,13 @@ public class LearnMath {
         System.out.println(Math.round(9.8));
     }
 }
-
 ```
+
+#### Scanner
+
+* Scanner的作用
+* 查看Scanner的源代码和since , 理解public带来的现实中的约束
+* 查看Scanner的源代码
 
 
 
