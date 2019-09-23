@@ -40,7 +40,7 @@ public class LearnMath {
 
 * Scanner的作用
 * 查看Scanner的源代码和since , 理解public带来的现实中的约束
-  * 为了稳定的提供public的方法 , 成员变量和自己用的方法都应该是用private . 
+  * 为了稳定的提供public的方法 , 成员变量和自己用的方法都应该是用private . public方法不变 , 或者仅重载 . 
 * 查看Scanner的源代码
 
 ```java
