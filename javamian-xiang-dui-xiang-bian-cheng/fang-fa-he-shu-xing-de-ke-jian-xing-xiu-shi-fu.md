@@ -62,10 +62,16 @@ public class MerchandiseV2 {
         freeStyle();
     }
 
-    // >> TODO 对于private的方法，因为类外面掉不到，所以无论怎么改，也不会影响（直接影响）类外面的代码
+    // >> TODO 对于private的方法,因为类外面掉不到,所以无论怎么改,也不会影响(直接影响)类外面的代码
     private void freeStyle() {
 
     }
+}
+```
+
+```java
+// >> TODO 非public的类,类名可以不和文件名相同
+class NonPublicClassCanUseAnyName {
 }
 ```
 
