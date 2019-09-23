@@ -25,7 +25,7 @@ public class MerchandiseV2 {
     private NonPublicClassCanUseAnyName nonPublicClassCanUseAnyName;
     public static double DISCOUNT = 0.1;
 
-    // >> TODO 构造方法如果是private的，那么就只有当前的类可以调用这个构造方法
+    // >> TODO 构造方法如果是private的,那么就只有当前的类可以调用这个构造方法
     public MerchandiseV2(String name, String id, int count, double soldPrice, double purchasePrice) {
         this.name = name;
         this.id = id;
@@ -35,8 +35,8 @@ public class MerchandiseV2 {
         // soldPrice = 9/0;
     }
 
-    // >> TODO 有些时候，会把所有的构造方法都定义成private的，然后使用静态方法调用构造方法
-    // >> TODO 同样的，这样的好处是可以通过代码，检查每个属性值是否合法。
+    // >> TODO 有些时候,会把所有的构造方法都定义成private的,然后使用静态方法调用构造方法
+    // >> TODO 同样的,这样的好处是可以通过代码,检查每个属性值是否合法
     public static MerchandiseV2 createMerchandise(String name, String id, int count,
                                                   double soldPrice, double purchasePrice) {
         if (soldPrice < 0 || purchasePrice < 0) {
@@ -53,7 +53,8 @@ public class MerchandiseV2 {
         this("无名", "000", 0, 1, 1.1);
     }
 
-    // >> TODO public的方法类似一种约定，既然外面的代码可以使用，就意味着不能乱改。比如签名不能改之类的
+    // >> TODO public的方法类似一种约定,既然外面的代码可以使用,就意味着不能乱改.
+    // >>      比如签名不能改之类的
     public void describe() {
         System.out.println("商品名字叫做" + name + "，id是" + id + "。 商品售价是" + soldPrice
             + "。商品进价是" + purchasePrice + "。商品库存量是" + count +
