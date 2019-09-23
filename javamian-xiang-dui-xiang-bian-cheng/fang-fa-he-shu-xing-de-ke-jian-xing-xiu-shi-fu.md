@@ -11,12 +11,12 @@
 理解访问修饰符 : 不只是为了限制不让人用 , 更为了有规矩 . 成员变量应该是private的 , 不需要让外部使用的方法应该都是private的
 
 ```java
-// >> TODO 类，静态方法，静态变量，成员变量，构造方法，成员方法都可以使用访问修饰符
+// >> TODO 类,静态方法,静态变量,成员变量,构造方法,成员方法都可以使用访问修饰符
 public class MerchandiseV2 {
 
     // >> TODO 成员变量应该都声明为private
-    // >> TODO 如果要读写这些成员变量，最好使用get set方法，这些方法应该是public的
-    // >> TODO 这样做的好处是，如果有需要，可以通过代码，检查每个属性值是否合法。
+    // >> TODO 如果要读写这些成员变量,最好使用get set方法,这些方法应该是public的
+    // >> TODO 这样做的好处是,如果有需要,可以通过代码,检查每个属性值是否合法
     private String name;
     private String id;
     private int count;
@@ -66,7 +66,6 @@ public class MerchandiseV2 {
 
     }
 }
-
 ```
 
 
