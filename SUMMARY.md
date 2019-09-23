@@ -43,6 +43,7 @@
   * [静态变量和静态方法](javamian-xiang-dui-xiang-bian-cheng/jing-tai-bian-liang-he-jing-tai-fang-fa.md)
   * [static代码块初始化静态变量](javamian-xiang-dui-xiang-bian-cheng/staticdai-ma-kuai-he-static-bian-liang.md)
   * [方法和属性的可见性修饰符](javamian-xiang-dui-xiang-bian-cheng/fang-fa-he-shu-xing-de-ke-jian-xing-xiu-shi-fu.md)
+  * [Math和Scanner](javamian-xiang-dui-xiang-bian-cheng/mathhe-scanner.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
