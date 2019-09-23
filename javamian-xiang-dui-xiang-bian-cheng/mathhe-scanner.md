@@ -42,5 +42,30 @@ public class LearnMath {
 * 查看Scanner的源代码和since , 理解public带来的现实中的约束
 * 查看Scanner的源代码
 
+```java
+package LearnClass;
+
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class LearnScanner {
+    public static void main(String[] args) {
+        // TODO Scanner是一个方便的可以帮我们从标准输入读取并转换数据的类
+        // TODO 注释里@since1.5表示它是从Java5才开始有的
+        Scanner scanner = new Scanner(System.in);
+
+        // TODO 但并不是说从Java5开始,这个类就没有了变化
+        // TODO 在源代码里搜索一下@since,会发现很多方法是在后续的Java版本中添加进去的
+        // TODO 但是private方法就不会有这个文档标识,因为private方法本来就不给用
+
+        System.out.println("请输入一个大的正数");
+        BigInteger bigInteger = scanner.nextBigInteger();
+        System.out.println("请输入想给这个数加多少");
+        BigInteger toBeAdd = scanner.nextBigInteger();
+        System.out.println("结果为:" + bigInteger.add(toBeAdd));
+    }
+}
+```
+
 
 
