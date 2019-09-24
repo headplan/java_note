@@ -33,5 +33,11 @@ public class InvokeMain {
 
 #### System类
 
+* System类中有很多和系统相关的方法 . 我们用的最多的就是in和out来读取和输出数据 . 
+* System里另一个最常用的 , 无可替代的方法 , 取当前时间 . 
+* System的文档 : 
+
+[https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html)
+
 
 
