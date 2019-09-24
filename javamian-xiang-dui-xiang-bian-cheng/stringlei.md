@@ -64,5 +64,29 @@ public class LearnString {
 }
 ```
 
+#### 人工智障机器人
+
+```java
+package LearnClass;
+
+import java.util.Scanner;
+
+public class LearnAI {
+    public static void main(String[] args) {
+        LearnAIClass AIClass = new LearnAIClass();
+        Scanner in = new Scanner(System.in);
+        while (true) {
+            String input = in.next();
+            if ("exit".equals(input)) {
+                System.out.println("再见!");
+                break;
+            }
+            String answer = AIClass.answer(input);
+            System.out.println(answer);
+        }
+    }
+}
+```
+
 
 
