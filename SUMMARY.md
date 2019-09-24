@@ -45,6 +45,7 @@
   * [方法和属性的可见性修饰符](javamian-xiang-dui-xiang-bian-cheng/fang-fa-he-shu-xing-de-ke-jian-xing-xiu-shi-fu.md)
   * [Math和Scanner](javamian-xiang-dui-xiang-bian-cheng/mathhe-scanner.md)
   * [String类](javamian-xiang-dui-xiang-bian-cheng/stringlei.md)
+  * [main方法和System类](javamian-xiang-dui-xiang-bian-cheng/mainfang-fa-he-system-lei.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
