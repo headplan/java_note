@@ -49,6 +49,7 @@
   * [StringBuilder类](javamian-xiang-dui-xiang-bian-cheng/stringbuilderlei.md)
   * [继承](javamian-xiang-dui-xiang-bian-cheng/ji-cheng.md)
     * [子类对象里藏着一个父类对象](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/zi-lei-dui-xiang-li-cang-zhao-yi-ge-fu-lei-dui-xiang.md)
+    * [覆盖 : 子类想要一点不一样](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/fu-gai-zi-lei-xiang-yao-yi-dian-bu-yi-yang.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
