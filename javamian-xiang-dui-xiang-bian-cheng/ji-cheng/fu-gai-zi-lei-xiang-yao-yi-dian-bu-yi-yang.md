@@ -6,5 +6,24 @@
 
 所以 , 使用方法读写属性 , 要优于直接访问属性 . 属性是联动的 , 可能是有特殊意义的 . 所以直接给属性赋值是危险的 , 因为没有办法检查新的值是否有意义 , 也没法对这个修改做联动的修改 .
 
-覆盖可以覆盖掉父类的方法 . 同一个方法 , 不同的行为 . 这就是多态 ! 方法可以覆盖 , 属性访问不可以 , 所以这也是使用方法的一个原因 . 方法不止眼前的代码 , 还有子类和覆盖 . 用方法才能覆盖 , 才能多态 . 
+覆盖可以覆盖掉父类的方法 . 同一个方法 , 不同的行为 . 这就是多态 ! 方法可以覆盖 , 属性访问不可以 , 所以这也是使用方法的一个原因 . 方法不止眼前的代码 , 还有子类和覆盖 . 用方法才能覆盖 , 才能多态 .
+
+```java
+public double buy(int count) {
+    if (count > MAX_BUY_ONE_ORDER) {
+        System.out.println("购买失败，手机一次最多只能买" + MAX_BUY_ONE_ORDER + "个");
+        return -2;
+    }
+    if (this.count < count) {
+        System.out.println("购买失败，库存不够");
+        return -1;
+    }
+    this.count -= count;
+    double cost = count * soldPrice;
+    System.out.println("购买成功，花费为" + cost);
+    return cost;
+}
+```
+
+
 
