@@ -52,6 +52,7 @@
     * [覆盖 : 子类想要一点不一样](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/fu-gai-zi-lei-xiang-yao-yi-dian-bu-yi-yang.md)
     * [super : 和父类对象沟通的桥梁](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/super-he-fu-lei-dui-xiang-gou-tong-de-qiao-liang.md)
     * [super : 调用父类的构造方法](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/super-diao-yong-fu-lei-de-gou-zao-fang-fa.md)
+    * [父类和子类的引用赋值关系](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/fu-lei-he-zi-lei-de-yin-yong-fu-zhi-guan-xi.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
