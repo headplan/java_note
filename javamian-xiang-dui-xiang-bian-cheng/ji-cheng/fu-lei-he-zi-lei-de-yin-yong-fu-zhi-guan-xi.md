@@ -36,7 +36,39 @@ public class ReferenceAssign {
         System.out.println(aPhone.getMemoryG());
     }
 }
+```
 
+#### 完整的例子
+
+```java
+import supermarket.MerchandiseV2;
+import supermarket.Phone;
+
+public class ReferenceAssign {
+    public static void main(String[] args) {
+        MerchandiseV2 m2 = new Phone(
+            "手机002", "Phone002", 100, 1999, 999,
+            4.5, 3.5, 4, 128, "索尼", "安卓"
+        );
+        // MerchandiseV2是Phone的父类,Phone是ShellColorChangePhone的父类
+        ShellColorChangePhone shellColorChangePhone = new ShellColorChangePhone("手机002", "Phone002", 100, 1999, 999,
+                4.5, 3.5, 4, 128, "索尼", "安卓");
+        // TODO 父类的引用,可以指向子类的对象,即可以用子类(以及子类的子类)的引用给父类的引用赋值
+        MerchandiseV2 ccm = shellColorChangePhone;
+
+        // TODO 父类的引用,可以指向子类的对象
+        // TODO 确定MerchandiseV2的引用ccm是指向的是Phone或者Phone的子类对象,那么可以强制类型转换
+        Phone ccp = (Phone) ccm;
+
+        // TODO 确定MerchandiseV2的引用ccm是指向的是ShellColorChangePhone或者ShellColorChangePhone的子类对象
+        // TODO 那么可以强制类型转换
+        ShellColorChangePhone scp = (ShellColorChangePhone) ccm;
+
+        // TODO 会出错,因为m2指向的是一个Phone类型的对象,不是ShellColorChangePhone的对象
+        ShellColorChangePhone notCCP = (ShellColorChangePhone) m2;
+        notCCP.calculateProfit();
+    }
+}
 ```
 
 
