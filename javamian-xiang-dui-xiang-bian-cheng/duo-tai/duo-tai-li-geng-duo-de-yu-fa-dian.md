@@ -43,7 +43,21 @@ public class OverloadTestAppMain {
 }
 ```
 
-引用做参数时 , 只看引用类型 , 引用掉方法的时候 , 看指向的实际对象 . 
+```java
+package supermarket;
 
+public class OverloadAndOverrideTestAppMain {
+    public static void main(String[] args) {
+        LittleSuperMarket superMarket = new LittleSuperMarket("大卖场", "回龙观", 500, 600, 100);
+        MerchandiseV2 m = superMarket.getMerchandiseOf(100);
 
+        // TODO:让重载的归重载,剩下的是覆盖的舞台
+        // TODO:重载决定了要调用参数为int的方法,这个方法要在m指向的对象上执行
+        // TODO:分别用true,1,3,6做参数,运行结果是什么?
+        m.buy(3);
+    }
+}
+```
+
+引用做参数时 , 只看引用类型 , 引用掉方法的时候 , 看指向的实际对象 .
 
