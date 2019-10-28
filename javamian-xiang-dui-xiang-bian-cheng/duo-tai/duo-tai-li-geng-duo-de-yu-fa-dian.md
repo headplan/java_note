@@ -4,8 +4,6 @@
 
 动态多态 : 覆盖 \(Override\)
 
-#### 重载
-
 ```java
 package supermarket;
 
@@ -45,7 +43,7 @@ public class OverloadTestAppMain {
 }
 ```
 
-#### 覆盖
+引用做参数时 , 只看引用类型 , 引用掉方法的时候 , 看指向的实际对象 . 
 
 
 
