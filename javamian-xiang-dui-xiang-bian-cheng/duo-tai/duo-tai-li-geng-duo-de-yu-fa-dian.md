@@ -2,7 +2,7 @@
 
 静态多态 : 重载 \(Overload\) 同一个类中的相同方法可以有不同的参数 .
 
-动态多态 : 覆盖 \(Override\) 
+动态多态 : 覆盖 \(Override\)
 
 #### 重载
 
@@ -44,6 +44,8 @@ public class OverloadTestAppMain {
     }
 }
 ```
+
+#### 覆盖
 
 
 
