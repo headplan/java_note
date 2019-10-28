@@ -55,6 +55,7 @@
     * [父类和子类的引用赋值关系](javamian-xiang-dui-xiang-bian-cheng/ji-cheng/fu-lei-he-zi-lei-de-yin-yong-fu-zhi-guan-xi.md)
   * [多态](javamian-xiang-dui-xiang-bian-cheng/duo-tai.md)
     * [多态里更多的语法点](javamian-xiang-dui-xiang-bian-cheng/duo-tai/duo-tai-li-geng-duo-de-yu-fa-dian.md)
+  * [instanceof操作符](javamian-xiang-dui-xiang-bian-cheng/instanceofcao-zuo-fu.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
