@@ -38,3 +38,5 @@ public final native Class<?> getClass();
 
 Native说方法没有方法体 , 其方法是用本地代码实现的 , 本地代码可以是C或者Cpp实现的 , 只是一个映射机制 , native表示编译成仅适合当前平台的方法 .
 
+Object可以理解为Java对对象的基本抽象 , 让每个类都有一个getClass方法 , 知道自己是什么类 , 还有hashCode方法 , 用来标识一个对象等等 . 
+
