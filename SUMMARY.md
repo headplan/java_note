@@ -58,6 +58,7 @@
   * [instanceof操作符](javamian-xiang-dui-xiang-bian-cheng/instanceofcao-zuo-fu.md)
   * [继承专属的访问控制 : protected](javamian-xiang-dui-xiang-bian-cheng/ji-cheng-zhuan-shu-de-fang-wen-kong-zhi-protected.md)
   * [final修饰符](javamian-xiang-dui-xiang-bian-cheng/finalxiu-shi-fu.md)
+  * [继承里的静态方法](javamian-xiang-dui-xiang-bian-cheng/ji-cheng-li-de-jing-tai-fang-fa.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
