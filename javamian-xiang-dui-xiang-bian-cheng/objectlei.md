@@ -32,9 +32,9 @@ public class TouchObject {
 }
 ```
 
-```
+```java
 public final native Class<?> getClass();
 ```
 
-Native说方法没有方法体 , 其方法是用本地代码实现的 , 本地代码可以是C或者Cpp实现的 , 只是一个映射机制 , native表示编译成仅适合当前平台的方法 . 
+Native说方法没有方法体 , 其方法是用本地代码实现的 , 本地代码可以是C或者Cpp实现的 , 只是一个映射机制 , native表示编译成仅适合当前平台的方法 .
 
