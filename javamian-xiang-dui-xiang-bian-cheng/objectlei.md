@@ -46,3 +46,13 @@ System.out.println("-");
 
 最后调用的其实就是obj.toString\(\);
 
+再来看看toString\(\)方法 : 
+
+```java
+public String toString() {
+    return this.getClass().getName() + "@" + Integer.toHexString(this.hashCode());
+}
+```
+
+
+
