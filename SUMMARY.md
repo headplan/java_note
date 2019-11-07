@@ -62,6 +62,7 @@
   * [for循环的另一种写法](javamian-xiang-dui-xiang-bian-cheng/for.md)
   * [Object类](javamian-xiang-dui-xiang-bian-cheng/objectlei.md)
   * [hashCode和equals方法](javamian-xiang-dui-xiang-bian-cheng/hashcodeheequals-fang-fa.md)
+  * [toString方法](javamian-xiang-dui-xiang-bian-cheng/tostringfang-fa.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
