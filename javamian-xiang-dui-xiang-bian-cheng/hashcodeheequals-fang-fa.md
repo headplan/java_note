@@ -32,7 +32,7 @@ public int hashCode() {
 
 #### String类的equals方法
 
-String 类的 equals 方法和 == 判断 . 
+String 类的 equals 方法和 == 判断 .
 
 ```java
 package supermarket;
@@ -59,5 +59,9 @@ public class StringEqualsAppMain {
 }
 ```
 
+Java对字符串有一些优化 , 如果创建的字符串不是那么多 , 这些字符串会放在同一个地方 , 如果有相同的字符串 , 就直接返回这个字符串对象 , 所以这里判断为s1和s2是同一个对象 . 
 
+String还是用equals去比较 , 最好不用==去比较 . 
+
+Java虚拟机对字符串的优化 , 具体的行为可能是因不同的jdk版本而不同 . 其实不是jdk优化了== , 而是jdk尽力优化了String对象的创建 , 减少重复创建相同的对象 . Integer这些也是一样的 . 
 
