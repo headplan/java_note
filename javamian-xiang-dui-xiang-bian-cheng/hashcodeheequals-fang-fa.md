@@ -30,5 +30,7 @@ public int hashCode() {
 
 > 两个引用相等 , 说明指向的对象是同一个 .
 
+#### String类的equals方法
+
 
 
