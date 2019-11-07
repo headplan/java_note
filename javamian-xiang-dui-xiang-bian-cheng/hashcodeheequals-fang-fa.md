@@ -32,5 +32,5 @@ public int hashCode() {
 
 #### String类的equals方法
 
-
+String 类的 equals 方法和 == 判断
 
