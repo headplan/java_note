@@ -63,6 +63,7 @@
   * [Object类](javamian-xiang-dui-xiang-bian-cheng/objectlei.md)
   * [hashCode和equals方法](javamian-xiang-dui-xiang-bian-cheng/hashcodeheequals-fang-fa.md)
   * [toString方法](javamian-xiang-dui-xiang-bian-cheng/tostringfang-fa.md)
+  * [初探Class类](javamian-xiang-dui-xiang-bian-cheng/chu-tan-class-lei.md)
 * Java中的异常处理
 * Java中的常用工具类和新语法
 * [Java中的线程](javazhong-de-xian-cheng.md)
