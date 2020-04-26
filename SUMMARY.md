@@ -65,8 +65,8 @@
   * [toString方法](javamian-xiang-dui-xiang-bian-cheng/tostringfang-fa.md)
   * [初探Class类](javamian-xiang-dui-xiang-bian-cheng/chu-tan-class-lei.md)
   * [初探反射](javamian-xiang-dui-xiang-bian-cheng/chu-tan-fan-she.md)
-* Java中的异常处理
-* Java中的常用工具类和新语法
+* [Java中的异常处理](javazhong-de-yi-chang-chu-li.md)
+* [Java中的常用工具类和新语法](javazhong-de-chang-yong-gong-ju-lei-he-xin-yu-fa.md)
 * [Java中的线程](javazhong-de-xian-cheng.md)
 * [Spring框架](springkuang-jia.md)
   * [第一个Spring程序](springkuang-jia/di-yi-ge-spring-cheng-xu.md)
