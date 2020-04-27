@@ -4,6 +4,8 @@
 
 下载安装JDK : [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
+镜像资源 : [https://mirrors.tuna.tsinghua.edu.cn/](https://mirrors.tuna.tsinghua.edu.cn/)
+
 检测JDK安装是否成功
 
 ```
