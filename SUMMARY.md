@@ -24,6 +24,7 @@
   * [每个对象都有一个接口](dui-xiang-dao-lun/mei-ge-dui-xiang-du-you-yi-ge-jie-kou.md)
   * [每个对象都提供服务](dui-xiang-dao-lun/mei-ge-dui-xiang-du-ti-gong-fu-wu.md)
   * [被隐藏的具体实现](dui-xiang-dao-lun/bei-yin-cang-de-ju-ti-shi-xian.md)
+  * [复用具体实现](dui-xiang-dao-lun/fu-yong-ju-ti-shi-xian.md)
 * [Java面向对象编程](javamian-xiang-dui-xiang-bian-cheng.md)
   * [初探类和对象](javamian-xiang-dui-xiang-bian-cheng/chu-tan-lei-he-dui-xiang.md)
   * [认识引用类型](javamian-xiang-dui-xiang-bian-cheng/ren-shi-yin-yong-lei-xing.md)
