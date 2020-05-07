@@ -16,6 +16,8 @@
   * [异常处理](dui-xiang-dao-lun/yi-chang-chu-li.md)
   * [并发编程](dui-xiang-dao-lun/bing-fa-bian-cheng.md)
 * [Java编程基础](chapter1.md)
+  * [一切都是对象](chapter1/yi-qie-du-shi-dui-xiang.md)
+  * 操作符
   * [Java中的基本数据类型](chapter1/javazhong-de-ji-ben-shu-ju-lei-xing.md)
   * [Java中的运算符](chapter1/javazhong-de-yun-suan-fu.md)
   * [Java中的位运算符](chapter1/javazhong-de-wei-yun-suan-fu.md)
@@ -31,7 +33,7 @@
   * [使用数组](chapter1/shi-yong-shu-zu.md)
   * [认识变量和数组](chapter1/ren-shi-bian-liang-he-shu-zu.md)
   * [多维数组](chapter1/duo-wei-shu-zu.md)
-  * [用数组灵活处理程序](chapter1/yong-shu-zu-ling-huo-chu-li-cheng-xu.md)
+  * 操作符
 * [Java面向对象编程](javamian-xiang-dui-xiang-bian-cheng.md)
   * [初探类和对象](javamian-xiang-dui-xiang-bian-cheng/chu-tan-lei-he-dui-xiang.md)
   * [认识引用类型](javamian-xiang-dui-xiang-bian-cheng/ren-shi-yin-yong-lei-xing.md)
