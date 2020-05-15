@@ -138,7 +138,7 @@ Java对象不具备和基本类型一样的生命周期 . 当用new创建一个J
 class ATypeName {}
 ```
 
-现在就可以用new来创建这种类型的对象 : 
+现在就可以用new来创建这种类型的对象 :
 
 ```
 ATypeName a = new ATypeName();
@@ -147,6 +147,24 @@ ATypeName a = new ATypeName();
 **字段和方法**
 
 一旦定义了一个类 , 就可以在类中设置两种类型的元素 , 字段和方法 . 字段可以是任何类型的对象 , 可以通过其引用与其进行通信 ; 也可以是基本类型中的一种 . 如果字段是对某个对象的引用 , 那么必须初始化该引用 , 必须new一个实际的对象 . 
+
+```
+class DataOnly {
+    int i;
+    double d;
+    boolean b;
+}
+DataOnly data = new DataOnly();
+```
+
+可以给字段赋值 , 但首先必须知道如何引用一个对象的成员 . 具体的实现为 : 在对象引用的名称之后紧接着一个句点 , 然后再接着是对象内部的成员名称 : 
+
+```
+objectReference.member
+data.i = 47;
+data.d = 1.1;
+data.b = false;
+```
 
 #### 方法 , 参数和返回值
 
