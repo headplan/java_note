@@ -210,7 +210,7 @@ int storage(String s) {
 }
 ```
 
-这里的return关键字表示已经做完 , 离开此方法 . 这个值要放在return语句后面 . 可以定义方法返回任意想要的类型 , 不想返回任何值 , 可以指示此方法返回void\(空\) . 
+这里的return关键字表示已经做完 , 离开此方法 . 这个值要放在return语句后面 . 可以定义方法返回任意想要的类型 , 不想返回任何值 , 可以指示此方法返回void\(空\) .
 
 ```
 boolean flag() { return true; }
@@ -218,6 +218,8 @@ double naturalLogBase() { return 2.718; }
 void nothing() { return; }
 void nothing2() {}
 ```
+
+如果返回类型是void , return关键字的作用只是用来退出方法 . 
 
 #### 构建一个Java程序
 
