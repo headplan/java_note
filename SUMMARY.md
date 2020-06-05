@@ -87,4 +87,5 @@
   * [第一个Spring程序](springkuang-jia/di-yi-ge-spring-cheng-xu.md)
 * [Maven](maven.md)
   * [环境配置](maven/huan-jing-pei-zhi.md)
+  * [POM](maven/pom.md)
 
