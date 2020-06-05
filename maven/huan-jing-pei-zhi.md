@@ -29,5 +29,9 @@ export PATH=${PATH}:${MAVEN_HOME}/bin
 # source /etc/profile
 ```
 
+```
+mvn -v
+```
+
 
 
