@@ -23,5 +23,11 @@ export MAVEN_HOME=/usr/local/apache-maven-3.3.9
 export PATH=${PATH}:${MAVEN_HOME}/bin
 ```
 
+保存文件 , 并运行如下命令使环境变量生效
+
+```
+# source /etc/profile
+```
+
 
 
