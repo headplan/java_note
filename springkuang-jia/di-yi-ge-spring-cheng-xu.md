@@ -58,5 +58,12 @@ public class HelloSpringApplication {
 }
 ```
 
-在Terminal中简单的访问一下url
+在Terminal中简单的访问一下URL : 
+
+```
+curl http://localhost:8001/hello                                                                     
+Hello Spring% 
+```
+
+
 
