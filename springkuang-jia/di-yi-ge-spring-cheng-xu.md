@@ -74,41 +74,41 @@ curl http://localhost:8001/actuator/health
 
 #### Maven的pom文件
 
-这里Spring boot把spring-boot-starter-parent作为整个maven工程的parent引入进来 , 这里其实引入了大量的依赖 , 并保证其不冲突 . 
+这里Spring boot把spring-boot-starter-parent作为整个maven工程的parent引入进来 , 这里其实引入了大量的依赖 , 并保证其不冲突 .
 
 ```asciidoc
 <parent>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-parent</artifactId>
-	<version>2.3.0.RELEASE</version>
-	<relativePath/> <!-- lookup parent from repository -->
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.0.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
 </parent>
 ```
 
-下面的依赖是没有版本号的
+下面的依赖是没有版本号的 , 都在parent中管理的 , 只要告诉maven用了什么就可以了 . 
 
 ```asciidoc
 <dependencies>
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-actuator</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
-	</dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
 
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-		<scope>test</scope>
-		<exclusions>
-			<exclusion>
-				<groupId>org.junit.vintage</groupId>
-				<artifactId>junit-vintage-engine</artifactId>
-			</exclusion>
-		</exclusions>
-	</dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
 </dependencies>
 ```
 
