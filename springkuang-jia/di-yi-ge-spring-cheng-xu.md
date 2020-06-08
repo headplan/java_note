@@ -23,5 +23,11 @@ HelloSpringApplication.java是入口程序 , 带有注解 :
 @SpringBootApplication
 ```
 
+resources文件夹下还生成了一个空的配置文件 : 
+
+```
+application.properties
+```
+
 
 
