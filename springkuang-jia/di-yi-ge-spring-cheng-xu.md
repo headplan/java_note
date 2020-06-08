@@ -33,13 +33,13 @@ test文件夹下是对应的测试类 .
 
 #### 运行项目
 
-在IDE下 , Run运行项目 , 因为默认的8080的端口被占用 , 所以修改`application.properties`配置文件 : 
+在IDE下 , Run运行项目 , 因为默认的8080的端口被占用 , 所以修改`application.properties`配置文件 :
 
 ```
 server.port=8001
 ```
 
-Hello Spring
+##### 运行Hello Spring
 
 ```java
 @SpringBootApplication
@@ -52,11 +52,11 @@ public class HelloSpringApplication {
 
     @RequestMapping("/hello")
     public String Hello() {
-		return "Hello Spring";
+        return "Hello Spring";
     }
 
 }
 ```
 
-
+在Terminal中简单的访问一下url
 
