@@ -11,3 +11,9 @@
 
 ![](/assets/start_spring.png)
 
+导入项目 , 看一下基本的目录结构 : 
+
+这是一个典型的Maven的单模块工程
+
+![](/assets/mulujiegou.png)
+
