@@ -58,11 +58,18 @@ public class HelloSpringApplication {
 }
 ```
 
-在Terminal中简单的访问一下URL : 
+在Terminal中简单的访问一下URL :
 
 ```
 curl http://localhost:8001/hello                                                                     
-Hello Spring% 
+Hello Spring
+```
+
+刚才我们在Dependencies中还选择了**Spring Boot Actuator** , 它还提供了一些额外的功能 , 比方说健康检查 : 
+
+```
+curl http://localhost:8001/actuator/health
+{"status":"UP"}
 ```
 
 
