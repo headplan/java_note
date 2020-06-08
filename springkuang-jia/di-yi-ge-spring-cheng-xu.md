@@ -65,11 +65,51 @@ curl http://localhost:8001/hello
 Hello Spring
 ```
 
-刚才我们在Dependencies中还选择了**Spring Boot Actuator** , 它还提供了一些额外的功能 , 比方说健康检查 : 
+刚才我们在Dependencies中还选择了**Spring Boot Actuator** , 它还提供了一些额外的功能 , 比方说健康检查 :
 
 ```
 curl http://localhost:8001/actuator/health
 {"status":"UP"}
+```
+
+#### Maven的pom文件
+
+这里Spring boot把spring-boot-starter-parent作为整个maven工程的parent引入进来 , 这里其实引入了大量的依赖 , 并保证其不冲突 . 
+
+```asciidoc
+<parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.3.0.RELEASE</version>
+	<relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
+
+下面的依赖是没有版本号的
+
+```asciidoc
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+		<exclusions>
+			<exclusion>
+				<groupId>org.junit.vintage</groupId>
+				<artifactId>junit-vintage-engine</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
+</dependencies>
 ```
 
 
