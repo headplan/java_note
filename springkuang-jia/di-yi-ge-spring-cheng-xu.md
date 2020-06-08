@@ -17,9 +17,9 @@
 
 ![](/assets/mulujiegou.png)
 
-HelloSpringApplication.java是入口程序 , 带有注解 : 
+HelloSpringApplication.java是入口程序 , 带有注解 :
 
-```
+```java
 @SpringBootApplication
 ```
 
