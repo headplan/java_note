@@ -2,6 +2,8 @@
 
 Maven 是一个基于 Java 的工具 , 所以要做的第一件事情就是安装 JDK .
 
+下载地址 : http://maven.apache.org/download.cgi
+
 #### JDK
 
 * Maven 3.3 要求 JDK 1.7 或以上
