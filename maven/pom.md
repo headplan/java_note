@@ -45,42 +45,44 @@ POM 中可以指定以下配置 :
 
 ### 父\(Super\)POM
 
-Super POM是 Maven 默认的 POM . 所有的 POM 都继承自一个父 POM \(无论是否显式定义了这个父 POM\) . 父 POM 包含了一些可以被继承的默认设置 . 因此 , 当 Maven 发现需要下载 POM 中的依赖时 , 它会到 Super POM 中配置的默认仓库 http://repo1.maven.org/maven2 去下载 . 
+Super POM是 Maven 默认的 POM . 所有的 POM 都继承自一个父 POM \(无论是否显式定义了这个父 POM\) . 父 POM 包含了一些可以被继承的默认设置 . 因此 , 当 Maven 发现需要下载 POM 中的依赖时 , 它会到 Super POM 中配置的默认仓库 [http://repo1.maven.org/maven2](http://repo1.maven.org/maven2) 去下载 .
 
-Maven 使用 effective pom\(Super pom 加上工程自己的配置\)来执行相关的目标 , 它帮助开发者在 pom.xml 中做尽可能少的配置 , 当然这些配置可以被重写 . 
+Maven 使用 effective pom\(Super pom 加上工程自己的配置\)来执行相关的目标 , 它帮助开发者在 pom.xml 中做尽可能少的配置 , 当然这些配置可以被重写 .
 
-使用以下命令来查看 Super POM 默认配置 : 
+使用以下命令来查看 Super POM 默认配置 :
 
 ```
 mvn help:effective-pom
 ```
 
-接下来创建目录 MVN/project , 在该目录下创建 pom.xml : 
+接下来创建目录 MVN/project , 在该目录下创建 pom.xml :
 
 ```XML
 <project xmlns = "http://maven.apache.org/POM/4.0.0"
     xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
- 
+
     <!-- 模型版本 -->
     <modelVersion>4.0.0</modelVersion>
     <!-- 公司或者组织的唯一标志，并且配置时生成的路径也是由此生成， 如com.companyname.project-group，maven会将该项目打成的jar包放本地路径：/com/companyname/project-group -->
     <groupId>com.companyname.project-group</groupId>
- 
+
     <!-- 项目的唯一ID，一个groupId下面可能多个项目，就是靠artifactId来区分的 -->
     <artifactId>project</artifactId>
- 
+
     <!-- 版本号 -->
     <version>1.0</version>
 </project>
 ```
 
-然后在目录下执行 : 
+然后在目录下执行 :
 
 ```
 mvn help:effective-pom
 ```
+
+Maven 将会开始处理并显示 effective-pom . 
 
 
 
