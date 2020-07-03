@@ -85,7 +85,11 @@
 * [Java中的线程](javazhong-de-xian-cheng.md)
 * [Spring框架](springkuang-jia.md)
   * [第一个Spring程序](springkuang-jia/di-yi-ge-spring-cheng-xu.md)
+  * [Spring中的数据操作](springkuang-jia/jdbc.md)
+    * [JDBC配置单数据源](springkuang-jia/jdbc/pei-zhi-dan-shu-ju-yuan.md)
+    * [JDBC配置多数据源](springkuang-jia/jdbc/pei-zhi-duo-shu-ju-yuan.md)
 * [Maven](maven.md)
   * [环境配置](maven/huan-jing-pei-zhi.md)
   * [POM](maven/pom.md)
+* [Gradle](gradle.md)
 
