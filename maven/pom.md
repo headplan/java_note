@@ -55,6 +55,12 @@ Maven 使用 effective pom\(Super pom 加上工程自己的配置\)来执行相�
 mvn help:effective-pom
 ```
 
+生成文件
+
+```XML
+mvn help:effective-pom -Doutput=EffectivePom.xml
+```
+
 接下来创建目录 MVN/project , 在该目录下创建 pom.xml :
 
 ```XML
@@ -82,7 +88,7 @@ mvn help:effective-pom
 mvn help:effective-pom
 ```
 
-Maven 将会开始处理并显示 effective-pom . 
+Maven 将会开始处理并显示 effective-pom .
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -116,7 +122,7 @@ Maven 将会开始处理并显示 effective-pom .
 ......
 ```
 
-上面的effective-pom就是 Maven 在执行目标时需要用到的默认工程源码目录结构、输出目录、需要的插件、仓库和报表目录 , 也就是Maven完整/实际/生效\(effective\)的pom.xml文件 . 
+上面的effective-pom就是 Maven 在执行目标时需要用到的默认工程源码目录结构、输出目录、需要的插件、仓库和报表目录 , 也就是Maven完整/实际/生效\(effective\)的pom.xml文件 .
 
 啊
 
