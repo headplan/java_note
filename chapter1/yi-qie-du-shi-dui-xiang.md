@@ -254,25 +254,25 @@ import java.util.*;
 * 一种是只想为某特定域分配单一存储空间 , 而不去考虑究竟要创建多少对象 , 甚至根本就不创建任何对象 . 
 * 一种是希望某个方法不与包含它的类的任何对象关联在一起 . 也就是说没有创建对象 , 也能调用这个方法 . 
 
-通过static关键字满足上面的两个需求 . 例如 : 
+通过static关键字满足上面的两个需求 . 例如 :
 
 ```java
 class StaticTest {
-	static int i = 47;
+    static int i = 47;
 }
 
 class Test {
-	public static void main(String[] args) {
-		StaticTest str1 = new StaticTest();
-		StaticTest str2 = new StaticTest();
-		str1.i++;
-		System.out.println(str1.i);
-		System.out.println(str2.i);
-	}
+    public static void main(String[] args) {
+        StaticTest str1 = new StaticTest();
+        StaticTest str2 = new StaticTest();
+        str1.i++;
+        System.out.println(str1.i);
+        System.out.println(str2.i);
+    }
 }
 ```
 
-
+类似的逻辑也应用于
 
 #### 第一个Java程序
 
