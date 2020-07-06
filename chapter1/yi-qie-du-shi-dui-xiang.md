@@ -233,6 +233,18 @@ cn.lartisan.blog
 
 **运用其他构件**
 
+想在自己的程序里使用预先定义好的类 , 编译器就必须知道怎么定位它们 . 在Java中使用关键字import来转却的告诉编译器导入的包 . 这样就不会写一长串的反转域名了 . 
+
+```
+import java.util.ArrayList;
+```
+
+还可以使用通配符 , 使用util包下的所有类 : 
+
+```
+import java.util.*;
+```
+
 **static关键字**
 
 #### 第一个Java程序
