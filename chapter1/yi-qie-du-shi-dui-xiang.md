@@ -272,29 +272,31 @@ class Test {
 }
 ```
 
-类似的逻辑也应用于静态方法 : 
+类似的逻辑也应用于静态方法 :
 
 ```java
 class StaticTest {
-	static int i = 47;
+    static int i = 47;
 }
 
 class Inc {
-	static void inc() {
-		StaticTest.i++;
-	}
+    static void inc() {
+        StaticTest.i++;
+    }
 }
 
 class Test {
-	public static void main(String[] args) {
-		StaticTest str1 = new StaticTest();
-		StaticTest str2 = new StaticTest();
-		Inc.inc();
-		System.out.println(str1.i);
-		System.out.println(str2.i);
-	}
+    public static void main(String[] args) {
+        StaticTest str1 = new StaticTest();
+        StaticTest str2 = new StaticTest();
+        Inc.inc();
+        System.out.println(str1.i);
+        System.out.println(str2.i);
+    }
 }
 ```
+
+尽管当static作用于某个字段时 , 肯定会改变数据创建的方式\(因为一个static字段对每个类来说都只有一份存储空间 , 而非static字段则是对每个对象有一个存储空间\) , 但是如果static作用于某个方法 , 差别却没那么大 . static方法的一个重要用法就是在不创建任何对象的前提下就可以调用它 . 这一点对定义main\(\)方法很重要 , 这个方法是运行一个应用时的入口 . 和其他任何方法一样 , static方法可以创建或使用与其类型相同的被命名对象 , 负责看护与其隶属同一类型的实例群 . 
 
 #### 第一个Java程序
 
