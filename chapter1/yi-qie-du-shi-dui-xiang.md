@@ -272,7 +272,29 @@ class Test {
 }
 ```
 
-类似的逻辑也应用于
+类似的逻辑也应用于静态方法 : 
+
+```java
+class StaticTest {
+	static int i = 47;
+}
+
+class Inc {
+	static void inc() {
+		StaticTest.i++;
+	}
+}
+
+class Test {
+	public static void main(String[] args) {
+		StaticTest str1 = new StaticTest();
+		StaticTest str2 = new StaticTest();
+		Inc.inc();
+		System.out.println(str1.i);
+		System.out.println(str2.i);
+	}
+}
+```
 
 #### 第一个Java程序
 
