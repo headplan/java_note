@@ -247,18 +247,30 @@ import java.util.*;
 
 **static关键字**
 
-当创建类时 , 就是在描述那个类的对象的外观与行为 . 除非new创建类对象 , 否则时间上并未获得任何对象 . 只有执行new来创建对象时 , 数据存储空间才被分配 , 其方法才供外界调用 . 
+当创建类时 , 就是在描述那个类的对象的外观与行为 . 除非new创建类对象 , 否则时间上并未获得任何对象 . 只有执行new来创建对象时 , 数据存储空间才被分配 , 其方法才供外界调用 .
 
-但是有两种情形用上述方法是无法解决的 : 
+但是有两种情形用上述方法是无法解决的 :
 
 * 一种是只想为某特定域分配单一存储空间 , 而不去考虑究竟要创建多少对象 , 甚至根本就不创建任何对象 . 
 * 一种是希望某个方法不与包含它的类的任何对象关联在一起 . 也就是说没有创建对象 , 也能调用这个方法 . 
 
+通过static关键字满足上面的两个需求 . 例如 : 
 
+```java
+class StaticTest {
+	static int i = 47;
+}
 
-
-
-
+class Test {
+	public static void main(String[] args) {
+		StaticTest str1 = new StaticTest();
+		StaticTest str2 = new StaticTest();
+		str1.i++;
+		System.out.println(str1.i);
+		System.out.println(str2.i);
+	}
+}
+```
 
 
 
