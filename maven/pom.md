@@ -24,7 +24,7 @@ POM 中可以指定以下配置 :
 | artifactId | 这是工程的标识 . 它通常是工程的名称 . 例如 , 消费者银行 . groupId 和 artifactId 一起定义了 artifact 在仓库中的位置 . |
 | version | 这是工程的版本号 . 在 artifact 的仓库中 , 它用来区分不同的版本 . 例如 : com.company.bank:consumer-banking:1.0com.company.bank:consumer-banking:1.1 |
 
-```
+```XML
 <project xmlns = "http://maven.apache.org/POM/4.0.0"
     xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
