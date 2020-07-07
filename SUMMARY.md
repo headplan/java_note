@@ -93,5 +93,8 @@
   * [POM](maven/pom.md)
     * [POM标签详解](maven/pom/pombiao-qian-xiang-jie.md)
   * [构建生命周期](maven/gou-jian-sheng-ming-zhou-qi.md)
+    * [Clean 生命周期](maven/gou-jian-sheng-ming-zhou-qi/clean-sheng-ming-zhou-qi.md)
+    * Default \(Build\) 生命周期
+    * Site 生命周期
 * [Gradle](gradle.md)
 
