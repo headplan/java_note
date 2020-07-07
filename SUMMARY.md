@@ -95,6 +95,6 @@
   * [构建生命周期](maven/gou-jian-sheng-ming-zhou-qi.md)
     * [Clean 生命周期](maven/gou-jian-sheng-ming-zhou-qi/clean-sheng-ming-zhou-qi.md)
     * [Default \(Build\) 生命周期](maven/gou-jian-sheng-ming-zhou-qi/default-build-sheng-ming-zhou-qi.md)
-    * Site 生命周期
+    * [Site 生命周期](maven/gou-jian-sheng-ming-zhou-qi/site-sheng-ming-zhou-qi.md)
 * [Gradle](gradle.md)
 
