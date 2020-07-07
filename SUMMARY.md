@@ -91,5 +91,6 @@
 * [Maven](maven.md)
   * [环境配置](maven/huan-jing-pei-zhi.md)
   * [POM](maven/pom.md)
+    * [POM标签详解](maven/pom/pombiao-qian-xiang-jie.md)
 * [Gradle](gradle.md)
 
