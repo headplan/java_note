@@ -98,7 +98,7 @@
     * [Site 生命周期](maven/gou-jian-sheng-ming-zhou-qi/site-sheng-ming-zhou-qi.md)
   * [构建配置文件](maven/gou-jian-pei-zhi-wen-jian.md)
   * [仓库](maven/cang-ku.md)
-  * 插件
+  * [插件](maven/cha-jian.md)
   * 构建Java项目
   * 构建项目测试
   * 引入外部依赖
