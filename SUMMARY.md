@@ -101,6 +101,6 @@
   * [插件](maven/cha-jian.md)
   * [构建Java项目](maven/gou-jian-java-xiang-mu.md)
   * [构建项目测试](maven/gou-jian-xiang-mu-ce-shi.md)
-  * 引入外部依赖
+  * [引入外部依赖](maven/yin-ru-wai-bu-yi-lai.md)
 * [Gradle](gradle.md)
 
