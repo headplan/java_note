@@ -99,7 +99,7 @@
   * [构建配置文件](maven/gou-jian-pei-zhi-wen-jian.md)
   * [仓库](maven/cang-ku.md)
   * [插件](maven/cha-jian.md)
-  * 构建Java项目
+  * [构建Java项目](maven/gou-jian-java-xiang-mu.md)
   * 构建项目测试
   * 引入外部依赖
 * [Gradle](gradle.md)
