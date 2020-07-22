@@ -1,4 +1,4 @@
-POM标签详解
+# POM标签详解
 
 ```XML
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -536,8 +536,8 @@ POM标签详解
             ......
         </pluginRepository>
     </pluginRepositories>
- 
- 
+
+
     <!--该元素描述了项目相关的所有依赖。 这些依赖组成了项目构建过程中的一个个环节。它们自动从项目定义的仓库中下载。要获取更多信息，请看项目依赖机制。 -->
     <dependencies>
         <dependency>
