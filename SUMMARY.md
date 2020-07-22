@@ -102,5 +102,7 @@
   * [构建Java项目](maven/gou-jian-java-xiang-mu.md)
   * [构建项目测试](maven/gou-jian-xiang-mu-ce-shi.md)
   * [引入外部依赖](maven/yin-ru-wai-bu-yi-lai.md)
+  * [项目模板](maven/xiang-mu-mo-ban.md)
+  * [项目文档](maven/xiang-mu-wen-dang.md)
 * [Gradle](gradle.md)
 
