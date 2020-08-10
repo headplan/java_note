@@ -106,7 +106,7 @@
   * [项目文档](maven/xiang-mu-wen-dang.md)
 * [Gradle](gradle.md)
 * [Java手册](javashou-ce.md)
-  * Java概述
+  * [Java概述](javashou-ce/javagai-shu.md)
   * Java开发环境
   * Java基本语法
   * Java执行控制流程
