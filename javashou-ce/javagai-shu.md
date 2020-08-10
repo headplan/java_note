@@ -47,3 +47,5 @@ public void foo() {
 
 静态语言主要有**Pascal, Perl, C/C++, JAVA, C\#, Scala**等 . 
 
+
+
