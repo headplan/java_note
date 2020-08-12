@@ -107,8 +107,8 @@
 * [Gradle](gradle.md)
 * [Java手册](javashou-ce.md)
   * [Java概述](javashou-ce/javagai-shu.md)
-  * Java开发环境
-  * Java基本语法
+  * [Java开发环境](javashou-ce/javakai-fa-huan-jing.md)
+  * [Java基本语法](javashou-ce/javaji-ben-yu-fa.md)
   * Java执行控制流程
   * Java面向对象
   * Java访问控制权限
