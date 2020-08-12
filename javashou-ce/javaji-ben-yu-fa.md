@@ -91,3 +91,7 @@ c = a++;
 
 ![](/assets/luojiyunsuanfu.png)
 
+下面是逻辑运算符对应的true/false符号表
+
+
+
