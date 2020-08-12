@@ -91,7 +91,11 @@ c = a++;
 
 ![](/assets/luojiyunsuanfu.png)
 
-下面是逻辑运算符对应的true/false符号表
+下面是逻辑运算符对应的true/false符号表 . 
 
+#### 按位运算符
 
+按位运算符用来操作整数基本类型中的每个`比特`位 , 也就是二进制位 . 按位操作符会对两个参数中对应的位执行布尔代数运算 , 并最终生成一个结果 . 
+
+![](/assets/anweiyunsuanfu.png)
 
