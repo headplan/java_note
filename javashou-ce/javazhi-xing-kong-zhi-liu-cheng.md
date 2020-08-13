@@ -21,7 +21,7 @@ return false;
 
 #### if...else条件语句
 
-if语句还可以与else连用 , 通常表现为**如果满足某种条件 , 就进行某种处理 , 否则就进行另一种处理** . 
+if语句还可以与else连用 , 通常表现为**如果满足某种条件 , 就进行某种处理 , 否则就进行另一种处理** .
 
 ```java
 int a = 10;
@@ -34,7 +34,7 @@ if (a >= b) {
 }
 ```
 
-if后的\(\)内的表达式必须是boolean型的 . 如果为true , 则执行if后的复合语句 ; 如果为false , 则执行else后的复合语句 . 
+if后的\(\)内的表达式必须是boolean型的 . 如果为true , 则执行if后的复合语句 ; 如果为false , 则执行else后的复合语句 .
 
 #### if...else if 多分支语句
 
@@ -50,6 +50,39 @@ if (x > 60) {
   System.out.println("x的值大于0但小于30");
 } else {
   System.out.println("x的值小于等于0");
+}
+```
+
+#### switch多分支语句
+
+比if...else语句更优雅的方式是使用switch多分支语句
+
+```java
+switch (week) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+  default:
+    System.out.println("No Else");
+    break;
 }
 ```
 
