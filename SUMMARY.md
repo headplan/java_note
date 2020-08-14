@@ -110,8 +110,8 @@
   * [Java开发环境](javashou-ce/javakai-fa-huan-jing.md)
   * [Java基本语法](javashou-ce/javaji-ben-yu-fa.md)
   * [Java执行控制流程](javashou-ce/javazhi-xing-kong-zhi-liu-cheng.md)
-  * Java面向对象
-  * Java访问控制权限
+  * [Java面向对象](javashou-ce/javamian-xiang-dui-xiang.md)
+  * [Java访问控制权限](javashou-ce/javafang-wen-kong-zhi-quan-xian.md)
   * Java接口和抽象类
   * Java异常
   * Java内部类
