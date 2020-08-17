@@ -157,17 +157,31 @@ for (int arr : array) {
 
 #### 跳转语句
 
-Java语言中 , 有三种跳转语句 : break , continue , return . 
+Java语言中 , 有三种跳转语句 : break , continue , return .
 
 **break语句**
 
-break 语句我们在 switch 中已经见到了 , 它是用于终止循环的操作 , 实际上break语句在for、while、do···while循环语句中 , 用于强行退出当前循环 , 例如 : 
+break 语句我们在 switch 中已经见到了 , 它是用于终止循环的操作 , 实际上break语句在for、while、do···while循环语句中 , 用于强行退出当前循环 , 例如 :
 
 ```java
 for (int i = 0;i < 10;i++) {
     if(i == 5){
       break;
     }
+}
+```
+
+**continue语句**
+
+continue也可以放在循环语句中 , 它与break语句具有想法的效果 , 作用是用于复制性下一次循环 , 而不是退出当前循环 , 例如 : 
+
+```java
+for (int i = 0;i < 10;i++) {
+  System.out.printl(" i = " + i );
+  if(i == 5){
+    System.out.printl("continue ... ");
+    continue;
+  }
 }
 ```
 
