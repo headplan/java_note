@@ -173,15 +173,25 @@ for (int i = 0;i < 10;i++) {
 
 **continue语句**
 
-continue也可以放在循环语句中 , 它与break语句具有想法的效果 , 作用是用于复制性下一次循环 , 而不是退出当前循环 , 例如 : 
+continue也可以放在循环语句中 , 它与break语句具有想法的效果 , 作用是用于复制性下一次循环 , 而不是退出当前循环 , 例如 :
 
 ```java
 for (int i = 0;i < 10;i++) {
   System.out.printl(" i = " + i );
   if(i == 5){
-    System.out.printl("continue ... ");
+    System.out.printl("continue...");
     continue;
   }
+}
+```
+
+**return语句**
+
+return语句可以从一个方法返回 , 并把控制权交给调用它的语句 . 
+
+```
+public void getName() {
+    return name;
 }
 ```
 
