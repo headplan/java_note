@@ -84,7 +84,7 @@ class Apple {
 }
 ```
 
-上面定义了一个 Apple 类 , 你会发现这个 Apple 类没有参数类型和返回值 , 并且有多个以 Apple 同名的方法 , 而且各个 Apple 的参数列表都不一样 , 这其实是一种多态的体现 . 在定义完成构造方法后 , 我们就能够创建 Apple 对象了 . 
+上面定义了一个 Apple 类 , 你会发现这个 Apple 类没有参数类型和返回值 , 并且有多个以 Apple 同名的方法 , 而且各个 Apple 的参数列表都不一样 , 这其实是一种多态的体现 . 在定义完成构造方法后 , 我们就能够创建 Apple 对象了 .
 
 ```java
 class createApple {
@@ -93,6 +93,27 @@ class createApple {
         Apple apple2 = new Apple(1);
         Apple apple3 = new Apple("red");
         Apple apple4 = new Apple(2, "color");
+    }
+}
+```
+
+如上面所示 , 我们定义了四个 Apple 对象 , 并调用了 Apple 的四种不同的构造方法 , 其中 , 不加任何参数的构造方法被称为默认的构造方法 , 也就是
+
+```
+Apple apple1 = new Apple();
+```
+
+如果类中没有定义任何构造方法 , 那么JVM会自动生成一个构造方法 , 如下 : 
+
+```java
+class Apple {
+    int sum;
+    String color;
+}
+
+class createApple {
+    public static void main(String[] args) {
+        Apple apple1 = new Apple();
     }
 }
 ```
