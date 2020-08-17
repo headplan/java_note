@@ -66,21 +66,34 @@ public int getResult() {
 }
 ```
 
-其中 , `getResult`就是方法名称、`()`里面表示方法接收的参数、`return`表示方法的返回值 , 注意 : 方法的返回值必须和方法的`参数`类型保持一致 . 有一种特殊的参数类型 - `void`表示方法无返回值 . `{}`包含的代码段被称为方法体 . 
+其中 , `getResult`就是方法名称、`()`里面表示方法接收的参数、`return`表示方法的返回值 , 注意 : 方法的返回值必须和方法的`参数`类型保持一致 . 有一种特殊的参数类型 - `void`表示方法无返回值 . `{}`包含的代码段被称为方法体 .
 
 #### 构造方法
 
-在 Java 中 , 有一种特殊的方法被称为`构造方法` , 也被称为构造函数、构造器等 . 在 Java 中 , 通过提供这个构造器 , 来确保每个对象都被初始化 . 构造方法只能在对象的创建时期调用一次 , 保证了对象初始化的进行 . 构造方法比较特殊 , 它没有参数类型和返回值 , 它的名称要和类名保持一致 , 并且构造方法可以有多个 , 下面是一个构造方法的示例 : 
+在 Java 中 , 有一种特殊的方法被称为`构造方法` , 也被称为构造函数、构造器等 . 在 Java 中 , 通过提供这个构造器 , 来确保每个对象都被初始化 . 构造方法只能在对象的创建时期调用一次 , 保证了对象初始化的进行 . 构造方法比较特殊 , 它没有参数类型和返回值 , 它的名称要和类名保持一致 , 并且构造方法可以有多个 , 下面是一个构造方法的示例 :
 
 ```java
 class Apple {
     int sum;
     String color;
-    
+
     public Apple() {}
     public Apple(int sum) {}
     public Apple(String color) {}
     public Apple(int sum, String color) {}
+}
+```
+
+上面定义了一个 Apple 类 , 你会发现这个 Apple 类没有参数类型和返回值 , 并且有多个以 Apple 同名的方法 , 而且各个 Apple 的参数列表都不一样 , 这其实是一种多态的体现 . 在定义完成构造方法后 , 我们就能够创建 Apple 对象了 . 
+
+```java
+class createApple {
+    public static void main(String[] args) {
+        Apple apple1 = new Apple();
+        Apple apple2 = new Apple(1);
+        Apple apple3 = new Apple("red");
+        Apple apple4 = new Apple(2, "color");
+    }
 }
 ```
 
