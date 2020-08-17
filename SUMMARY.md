@@ -33,7 +33,7 @@
   * [使用数组](chapter1/shi-yong-shu-zu.md)
   * [认识变量和数组](chapter1/ren-shi-bian-liang-he-shu-zu.md)
   * [多维数组](chapter1/duo-wei-shu-zu.md)
-  * 操作符
+  * [操作符](chapter1/cao-zuo-fu.md)
 * [Java面向对象编程](javamian-xiang-dui-xiang-bian-cheng.md)
   * [初探类和对象](javamian-xiang-dui-xiang-bian-cheng/chu-tan-lei-he-dui-xiang.md)
   * [认识引用类型](javamian-xiang-dui-xiang-bian-cheng/ren-shi-yin-yong-lei-xing.md)
