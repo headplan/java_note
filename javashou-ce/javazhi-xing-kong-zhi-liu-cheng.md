@@ -187,9 +187,9 @@ for (int i = 0;i < 10;i++) {
 
 **return语句**
 
-return语句可以从一个方法返回 , 并把控制权交给调用它的语句 . 
+return语句可以从一个方法返回 , 并把控制权交给调用它的语句 .
 
-```
+```java
 public void getName() {
     return name;
 }
