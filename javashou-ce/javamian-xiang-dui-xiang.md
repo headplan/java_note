@@ -139,16 +139,16 @@ public class Apple {
     public int getApple(int sum) {
         return 1;
     }
-    
+
     public String getApple(String color) {
         return "color";
     }
 }
 ```
 
-上面的例子 , 有两种重载的方式 , 一种是Apple构造函数的重载 , 一种是getApple方法的重载 . 
+上面的例子 , 有两种重载的方式 , 一种是Apple构造函数的重载 , 一种是getApple方法的重载 .
 
-这里涉及到一个问题 , 要是有几个相同的名字 , Java如何知道你调用的是那个方法呢 ? 这里记住一点即可 , **每个重载的方法都有独一无二的参数列表** . 其中包括参数的类型 , 顺序 , 参数数量等 , 满足一种一个因素就构成了重载的必要条件 . 
+这里涉及到一个问题 , 要是有几个相同的名字 , Java如何知道你调用的是那个方法呢 ? 这里记住一点即可 , **每个重载的方法都有独一无二的参数列表** . 其中包括参数的类型 , 顺序 , 参数数量等 , 满足一种一个因素就构成了重载的必要条件 .
 
 **重载的条件**
 
@@ -162,7 +162,20 @@ public class Apple {
 
 方法的重写与重载虽然名字很相似 , 但却完全是不同的东西 . 方法重写的描述是对子类和父类之间的 . 而重载指的是同一类中的 . 代码如下 : 
 
+```java
+class Fruit {
+    public void eat() {
+        System.out.printl('eat fruit');
+    }
+}
 
+class Apple extends Fruit {
+    @Override
+    public void eat() {
+        System.out.printl('eat apple');
+    }
+}
+```
 
 
 
