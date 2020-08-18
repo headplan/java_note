@@ -126,5 +126,21 @@ class createApple {
 
 #### 方法重载
 
+在 Java 中一个很重要的概念是方法的重载 , 它是类名的不同表现形式 . 我们上面说到了构造函数 , 其实构造函数也是重载的一种 . 另外一种就是方法的重载 : 
+
+```java
+public class Apple {
+    int sum;
+    String color;
+    
+    public Apple(){}
+    public Apple(int sum){}
+    
+    public int getApple(int sum) {
+        return 1;
+    }
+}
+```
+
 
 
