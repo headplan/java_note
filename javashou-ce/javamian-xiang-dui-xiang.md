@@ -407,7 +407,7 @@ public class Apple {
 }
 ```
 
-main方法中传递了一个int值为10的参数 , 它表示的就是苹果的数量 , 并把这个数量赋给了num全局变量 . 所以num的值现在就是10 . 
+main方法中传递了一个int值为10的参数 , 它表示的就是苹果的数量 , 并把这个数量赋给了num全局变量 . 所以num的值现在就是10 .
 
 this还可以和构造函数一起使用 , 充当一个全局关键字的效果
 
@@ -415,21 +415,25 @@ this还可以和构造函数一起使用 , 充当一个全局关键字的效果
 public class Apple {
     private int num;
     private String color;
-    
+
     public Apple(int num) {
         this(num, "红色");
     }
-    
+
     public Apple(String color) {
         this(1, color);
     }
-    
-    public Apple(int ) {
+
+    public Apple(int num, String color) {
         this.num = num;
         this.color = color;
     }
 }
 ```
+
+上面使用的代码不是this , 而是this\(参数\) . 它相当于调用了其他构造方法 , 然后传递参数进去 . 这里注意一点 , this\(\)必须放在构造方法的第一行 , 否则编译不通过 . 
+
+
 
 
 
