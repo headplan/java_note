@@ -300,7 +300,25 @@ int[] a1;
 int a1[];
 ```
 
-两种格式的含义是一样的 . 
+两种格式的含义是一样的 .
 
-直接给每个元素
+* 直接给每个元素赋值 : int array\[4\] = {1,2,3,4};
+* 给一部分赋值 , 后面的都为0 : int array\[4\] = {1,2};
+* 由赋值参数个数决定数组的个数 : int array\[\] = {1,2};
+
+**可变参数列表**
+
+Java中一种数组冷门的用法就是可变参数 , 可变参数的定义如下 : 
+
+```java
+public int add(int... numbers) {
+    int sum = 0;
+    for (int num : numbers) {
+        sum += num;
+    }
+    return sum;
+}
+```
+
+
 
