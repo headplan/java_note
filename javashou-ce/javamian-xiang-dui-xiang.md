@@ -389,20 +389,44 @@ public class Apple {
 }
 ```
 
-这里比较有趣的地方就是eatApple\(\)方法可以调用多次 , 在后面还可以继续调用 , 其实就是this原因 , 在`eatApple`方法中加了一个`return this`的返回值 , 也就是说哪个对象调用`eatApple`方法都能返回对象的自身 . 
+这里比较有趣的地方就是eatApple\(\)方法可以调用多次 , 在后面还可以继续调用 , 其实就是this原因 , 在`eatApple`方法中加了一个`return this`的返回值 , 也就是说哪个对象调用`eatApple`方法都能返回对象的自身 .
 
-this还可以修饰属性 , 最常见的就是在构造方法中使用this : 
+this还可以修饰属性 , 最常见的就是在构造方法中使用this :
 
 ```java
 public class Apple {
     private int num;
-    
+
     public Apple(int num) {
         this.num = num;
     }
-    
+
     public static void main(String[] args) {
         new Apple(10);
+    }
+}
+```
+
+main方法中传递了一个int值为10的参数 , 它表示的就是苹果的数量 , 并把这个数量赋给了num全局变量 . 所以num的值现在就是10 . 
+
+this还可以和构造函数一起使用 , 充当一个全局关键字的效果
+
+```java
+public class Apple {
+    private int num;
+    private String color;
+    
+    public Apple(int num) {
+        this(num, "红色");
+    }
+    
+    public Apple(String color) {
+        this(1, color);
+    }
+    
+    public Apple(int ) {
+        this.num = num;
+        this.color = color;
     }
 }
 ```
