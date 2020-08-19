@@ -308,7 +308,7 @@ int a1[];
 
 **可变参数列表**
 
-Java中一种数组冷门的用法就是可变参数 , 可变参数的定义如下 : 
+Java中一种数组冷门的用法就是可变参数 , 可变参数的定义如下 :
 
 ```java
 public int add(int... numbers) {
@@ -318,6 +318,15 @@ public int add(int... numbers) {
     }
     return sum;
 }
+```
+
+然后 , 可以使用下面这几种方式进行可变参数的调用
+
+```java
+add(); // 不传参数
+add(1); // 传递一个参数
+add(2,1); // 传递多个参数
+add(new Integer[] {1,2,3}); // 传递数组
 ```
 
 
