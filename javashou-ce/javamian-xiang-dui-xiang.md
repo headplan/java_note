@@ -237,16 +237,16 @@ public class Counter {
 }
 ```
 
-利用构造函数 , 能够把 i 的值初始化为 11 . 
+利用构造函数 , 能够把 i 的值初始化为 11 .
 
 #### 初始化顺序
 
-* 静态属性 : static开头定义的属性
-* 静态方法块 : static {} 包起来的代码块
-* 普通属性 : 非static定义的属性
-* 普通方法块 : {} 包起来的代码块
-* 构造函数 : 类名相同的方法
-* 方法 : 普通方法
+* **静态属性** : static开头定义的属性
+* **静态方法块** : static {} 包起来的代码块
+* **普通属性** : 非static定义的属性
+* **普通方法块** : {} 包起来的代码块
+* **构造函数** : 类名相同的方法
+* **方法** : 普通方法
 
 ```java
 public class LifeCycle {
@@ -267,20 +267,24 @@ public class LifeCycle {
     public LifeCycle() {
         System.out.println("构造函数初始化");
     }
-    
+
     public static String getStaticField() {
         String staticField = "Static Field Initial";
         return staticField;
     }
-    
+
     public static String getField() {
         String field = "Field Initial";
         return field;
     }
     // 主函数
-    
+    public static void main(String[] argc) {
+        new LifeCycle();
+    }
 }
 ```
 
+上面代码的执行结果 , 就反映了初始化顺序 . 
 
+**静态属性初始化** -&gt; **静态方法块初始化** -&gt; **普通属性初始化** -&gt; **普通方法块初始化** -&gt; **构造函数初始化**
 
