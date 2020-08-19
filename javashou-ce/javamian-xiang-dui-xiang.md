@@ -433,7 +433,26 @@ public class Apple {
 
 上面使用的代码不是this , 而是this\(参数\) . 它相当于调用了其他构造方法 , 然后传递参数进去 . 这里注意一点 , this\(\)必须放在构造方法的第一行 , 否则编译不通过 . 
 
+如果把this理解为指向自身的一个引用 , 那么super就是指向父类的一个引用 . super关键字和this一样 , 可以使用super.对象来引用父类的成员 : 
 
+```java
+public class Fruit {
+    int num;
+    String color;
+    
+    public void eat() {
+        System.out.println("eat Fruit");
+    }
+}
+
+public class Apple extends Fruit {
+    @Override
+    public void eat() {
+        super.num = 10;
+        System.out.println("eat" + num + "Apple");
+    }
+}
+```
 
 
 
