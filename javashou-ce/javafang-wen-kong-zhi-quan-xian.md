@@ -73,7 +73,7 @@ public class Apple extends Fruit {
 }
 ```
 
-可以发现 `main`方法中有一个很神奇的地方 , `Fruit fruit = new Apple()` , Fruit 类型的对象竟然指向了Apple对象的引用 , 这其实就是多态 -&gt; 父类引用指向子类对象 , 因为 Apple 继承于 Fruit , 并且重写了 eat 方法 , 所以能够表现出来多种状态的形式 . 
+可以发现 `main`方法中有一个很神奇的地方 , `Fruit fruit = new Apple()` , Fruit 类型的对象竟然指向了Apple对象的引用 , 这其实就是多态 -&gt; 父类引用指向子类对象 , 因为 Apple 继承于 Fruit , 并且重写了 eat 方法 , 所以能够表现出来多种状态的形式 .
 
 #### 组合
 
@@ -90,5 +90,5 @@ public class Soccer {
 }
 ```
 
-
+代码中SoccerPlayer引用了Soccer类 , 通过引用Soccer类 , 来达到调用soccer中的属性和方法 . 
 
