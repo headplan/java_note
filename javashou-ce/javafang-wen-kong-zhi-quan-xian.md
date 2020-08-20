@@ -92,3 +92,7 @@ public class Soccer {
 
 代码中SoccerPlayer引用了Soccer类 , 通过引用Soccer类 , 来达到调用soccer中的属性和方法 . 
 
+#### 代理
+
+除了继承和组合外 , 另外一种值得探讨的关系模型称为`代理` . 
+
