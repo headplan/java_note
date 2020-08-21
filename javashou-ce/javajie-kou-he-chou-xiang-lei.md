@@ -38,10 +38,19 @@ class HeadplanWriteWell implements HeadplanGoodJob {
 
 #### 抽象类
 
-抽象类是一种抽象能力弱于接口的类 , 在Java中 , 抽象类使用`abstract`关键字来表示 . 
+抽象类是一种抽象能力弱于接口的类 , 在Java中 , 抽象类使用`abstract`关键字来表示 .
 
-```
+```java
+public interface Dog {
+    void FurColor();
+}
 
+abstract class WhiteDog implements Dog {
+    public void FurColor() {
+        System.out.println("Fur is white");
+    }
+    abstract void SmallBody();
+}
 ```
 
 
