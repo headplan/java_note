@@ -90,9 +90,38 @@ public class Soccer {
 }
 ```
 
-代码中SoccerPlayer引用了Soccer类 , 通过引用Soccer类 , 来达到调用soccer中的属性和方法 . 
+代码中SoccerPlayer引用了Soccer类 , 通过引用Soccer类 , 来达到调用soccer中的属性和方法 .
 
 #### 代理
 
-除了继承和组合外 , 另外一种值得探讨的关系模型称为`代理` . 
+除了继承和组合外 , 另外一种值得探讨的关系模型称为`代理` . 代理的大致描述是 , A想要调用B类的方法 , A不直接调用 , A会在自己的类中创建一个B对象的代理 , 再由代理调用B的方法 . 
+
+```java
+public class Destination {
+    public void todo() {
+        System.out.println("control...");
+    }    
+}
+
+public class Device {
+    private String name;
+    private Destination destination;
+    private DeviceController deviceController;
+    
+    public void control(Destination destination) {
+        destination.todo;
+    }
+}
+
+public class DeviceController {
+    private Device name;
+    private Destination destination;
+    
+    public void control(Destination destination) {
+        destination.todo();
+    }
+}
+```
+
+
 
