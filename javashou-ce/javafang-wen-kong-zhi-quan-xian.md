@@ -132,7 +132,7 @@ public class DeviceController {
 
 #### static
 
-static是Java中的关键字 , 它的意思是**静态的** , static可以用来修饰成员变量和方法 , static用在没有创建对象的情况下调用**方法/变量** . 
+static是Java中的关键字 , 它的意思是**静态的** , static可以用来修饰成员变量和方法 , static用在没有创建对象的情况下调用**方法/变量** .
 
 * 用static声明的成员变量为静态成员变量 , 也称为类变量 . 类变量的生命周期和类相同 , 在整个应用程序执行期间都有效 . 
 
@@ -141,6 +141,22 @@ static String name = "headplan";
 ```
 
 * 使用static修饰的方法称为静态方法 , 静态方法能够直接使用**类名.方法名**进行调用 . 由于静态方法不依赖于任何对象就可以直接访问 , 因此对于静态方法来说 , 是没有 this 关键字的 , 实例变量都会有 this 关键字 . 在静态方法中不能访问类的非静态成员变量和非静态方法 . 
+
+```java
+static void printMessage() {
+    System.out.println("headplan");
+}
+```
+
+static除了修饰属性和方法外 , 还有静态代码块的功能 , 可用于类的初始化操作 . 进而提升程序的性能 . 
+
+```java
+public class StaicBlock {
+    static {
+        System.out.println("HeadPlan");
+    }
+}
+```
 
 
 
