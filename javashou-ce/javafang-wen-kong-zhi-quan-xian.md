@@ -148,7 +148,7 @@ static void printMessage() {
 }
 ```
 
-static除了修饰属性和方法外 , 还有静态代码块的功能 , 可用于类的初始化操作 . 进而提升程序的性能 . 
+static除了修饰属性和方法外 , 还有静态代码块的功能 , 可用于类的初始化操作 . 进而提升程序的性能 .
 
 ```java
 public class StaicBlock {
@@ -158,5 +158,5 @@ public class StaicBlock {
 }
 ```
 
-
+由于静态代码块随着类的加载而执行 , 因此 , 很多时候会将只需要进行一次的初始化操作放在 static 代码块中进行 . 
 
