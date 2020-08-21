@@ -18,7 +18,7 @@ public interface HeadplanGoodJob {
 }
 ```
 
-这里隐含了一些接口的特征 : 
+这里隐含了一些接口的特征 :
 
 * `interface`接口是一个完全抽象的类 , 不会提供任何方法的实现 , 只是会进行方法的定义 . 
 * 接口中只能使用两种访问修饰符 , 一种是`public` , 它对整个项目可见 ; 一种是default缺省值 , 它只具有包访问权限 . 
@@ -31,6 +31,17 @@ class HeadplanWriteWell implements HeadplanGoodJob {
         System.out.println("Headplan Team");
     }
 }
+```
+
+* 接口不能被实例化 , 所以接口中不能有任何构造方法 , 定义构造方法编译会出错 . 
+* 接口的实现必须实现接口的全部方法 , 否则必须定义为抽象类 . 
+
+#### 抽象类
+
+抽象类是一种抽象能力弱于接口的类 , 在Java中 , 抽象类使用`abstract`关键字来表示 . 
+
+```
+
 ```
 
 
