@@ -20,9 +20,28 @@ Throwable类是Java语言中所有错误\(errors\)和异常\(exceptions\)的父�
 >
 > The _checked exception classes_ are all exception classes other than the unchecked exception classes. That is, the checked exception classes are `Throwable` and all its subclasses other than `RuntimeException` and its subclasses and `Error` and its subclasses.
 
-也就是说 , 除了`RuntimeException`和其子类 , 以及`error`和其子类 , 其它的所有异常都是`checkException` . 
+也就是说 , 除了`RuntimeException`和其子类 , 以及`error`和其子类 , 其它的所有异常都是`checkException` .
 
 那么 , 按照这种逻辑关系 , 可以对 Throwable 及其子类进行归类分析
 
-![](/assets/throwableclass.png)
+![](/assets/throwableclass.png)这里 , Throwable位于异常和错误的最顶层 , 查看Throwable类中发现它的方法和属性有很多 , 这里讨论几个比较常用的 : 
+
+```java
+// 返回抛出异常的详细信息
+public string getMessage();
+public string getLocalizedMessage();
+
+// 返回异常发生时的简要描述
+public String toString();
+
+// 打印异常信息到标准输出流上
+public void printStackTrace();
+public void printStackTrace(PrintStream s);
+public void printStackTrace(PrintWriter s);
+
+// 记录栈帧的当前状态
+public synchronized Throwable fillInStackTrace();
+```
+
+
 
