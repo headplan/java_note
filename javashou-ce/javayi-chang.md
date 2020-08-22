@@ -17,10 +17,12 @@ Throwable类是Java语言中所有错误\(errors\)和异常\(exceptions\)的父�
 在[Java规范](https://docs.oracle.com/javase/specs/jls/se9/html/jls-11.html#jls-11.1.1)中 , 对非受查异常和受查异常的定义是这样的 :
 
 > The \_unchecked exception classes \_are the run-time exception classes and the error classes.
-
+>
 > The _checked exception classes_ are all exception classes other than the unchecked exception classes. That is, the checked exception classes are `Throwable` and all its subclasses other than `RuntimeException` and its subclasses and `Error` and its subclasses.
 
 也就是说 , 除了`RuntimeException`和其子类 , 以及`error`和其子类 , 其它的所有异常都是`checkException` . 
 
+那么 , 按照这种逻辑关系 , 可以对 Throwable 及其子类进行归类分析
 
+![](/assets/throwableclass.png)
 
