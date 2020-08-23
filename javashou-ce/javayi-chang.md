@@ -77,13 +77,41 @@ public synchronized Throwable fillInStackTrace();
 
 #### throws 和 throw
 
-在 Java 中 , 异常也就是一个对象 , 它能够被程序员自定义抛出或者应用程序抛出 , 必须借助于`throws`和`throw`语句来定义抛出异常 . 
+在 Java 中 , 异常也就是一个对象 , 它能够被程序员自定义抛出或者应用程序抛出 , 必须借助于`throws`和`throw`语句来定义抛出异常 .
 
-throws 和 throw 通常是成对出现的 , 例如 : 
+throws 和 throw 通常是成对出现的 , 例如 :
 
 ```java
 static void cacheException() throws Exception {
     throw new Exception();
+}
+```
+
+throw 语句用在方法体内 , 表示抛出异常 , 由方法体内的语句处理 . throws 语句用在方法声明后面 , 表示再抛出异常 , 由该方法的调用者来处理 . 
+
+throws主要是声明这个方法会抛出这种类型的异常 , 使它的调用者知道要捕获这个异常 . throw 是具体向外抛异常的动作 , 所以它是抛出一个异常实例 . 
+
+#### try , finally , catch
+
+这三个关键字主要有下面几种组合方式**try...catch 、try...finally、try...catch...finally . **
+
+try...catch表示对某一段代码可能抛出异常进行的捕获 , 例如 : 
+
+```java
+static void cacheException() throws Exception {
+    try {
+        System.out.println("1");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
+
+try...finally表示对一段代码不管执行情况如何 , 都会走finally中的代码 : 
+
+```java
+static void cacheException() throws Exception {
+    
 }
 ```
 
