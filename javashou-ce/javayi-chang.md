@@ -43,13 +43,13 @@ public void printStackTrace(PrintWriter s);
 public synchronized Throwable fillInStackTrace();
 ```
 
-此外 , 因为Throwable的父类也是`Object` , 所以常用的方法还有继承其父类的`getClass()`和`getName()`方法 . 
+此外 , 因为Throwable的父类也是`Object` , 所以常用的方法还有继承其父类的`getClass()`和`getName()`方法 .
 
 #### 常见的Exception
 
-下面我们回到Exception的探讨上来 , 现在你知道了Exception的父类是Throwable , 并且Exception有两种异常 , 一种是`RuntimeException` ; 一种是`CheckedException` , 这两种异常都应该去`捕获` . 
+下面我们回到Exception的探讨上来 , 现在你知道了Exception的父类是Throwable , 并且Exception有两种异常 , 一种是`RuntimeException` ; 一种是`CheckedException` , 这两种异常都应该去`捕获` .
 
-下面列出了一些 Java 中常见的异常及其分类 : 
+下面列出了一些 Java 中常见的异常及其分类 :
 
 ##### RuntimeException
 
@@ -61,6 +61,15 @@ public synchronized Throwable fillInStackTrace();
 | NegativeArraySizeException | 数组长度为负异常 |
 | IllegalStateException | 非法状态异常 |
 | ClassCastException | 类型转换异常 |
+
+**UncheckedException**
+
+| 异常名称 | 异常描述 |
+| :--- | :--- |
+| NoSuchFieldException | 表示该类没有指定名称抛出来的异常 |
+| NoSuchMethodException | 表示该类没有指定方法抛出来的异常 |
+| IllegalArgumentException | 不允许访问某个类的异常 |
+| ClassNotFoundException | 类没有找到抛出异常 |
 
 
 
