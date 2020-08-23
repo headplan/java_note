@@ -71,5 +71,21 @@ public synchronized Throwable fillInStackTrace();
 | IllegalArgumentException | 不允许访问某个类的异常 |
 | ClassNotFoundException | 类没有找到抛出异常 |
 
+#### 与 Exception 有关的 Java 关键字
+
+在 Java 中有这几个关键字**throws、throw、try、finally、catch . **
+
+#### throws 和 throw
+
+在 Java 中 , 异常也就是一个对象 , 它能够被程序员自定义抛出或者应用程序抛出 , 必须借助于`throws`和`throw`语句来定义抛出异常 . 
+
+throws 和 throw 通常是成对出现的 , 例如 : 
+
+```java
+static void cacheException() throws Exception {
+    throw new Exception();
+}
+```
+
 
 
