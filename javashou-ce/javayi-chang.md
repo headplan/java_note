@@ -123,5 +123,5 @@ static void cacheException() throws Exception {
 }
 ```
 
-
+try...catch...finally也是一样的 , 表示对异常捕获后 , 再走finally中的代码逻辑 . 
 
