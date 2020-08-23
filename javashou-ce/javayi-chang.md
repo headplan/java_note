@@ -24,7 +24,7 @@ Throwable类是Java语言中所有错误\(errors\)和异常\(exceptions\)的父�
 
 那么 , 按照这种逻辑关系 , 可以对 Throwable 及其子类进行归类分析
 
-![](/assets/throwableclass.png)这里 , Throwable位于异常和错误的最顶层 , 查看Throwable类中发现它的方法和属性有很多 , 这里讨论几个比较常用的 : 
+![](/assets/throwableclass.png)这里 , Throwable位于异常和错误的最顶层 , 查看Throwable类中发现它的方法和属性有很多 , 这里讨论几个比较常用的 :
 
 ```java
 // 返回抛出异常的详细信息
@@ -42,6 +42,25 @@ public void printStackTrace(PrintWriter s);
 // 记录栈帧的当前状态
 public synchronized Throwable fillInStackTrace();
 ```
+
+此外 , 因为Throwable的父类也是`Object` , 所以常用的方法还有继承其父类的`getClass()`和`getName()`方法 . 
+
+#### 常见的Exception
+
+下面我们回到Exception的探讨上来 , 现在你知道了Exception的父类是Throwable , 并且Exception有两种异常 , 一种是`RuntimeException` ; 一种是`CheckedException` , 这两种异常都应该去`捕获` . 
+
+下面列出了一些 Java 中常见的异常及其分类 : 
+
+##### RuntimeException
+
+| 异常名称 | 异常描述 |
+| :--- | :--- |
+| ArrayIndexOutOfBoundsException | 数组越界异常 |
+| NullPointerException | 空指针异常 |
+| IllegalArgumentException | 非法参数异常 |
+| NegativeArraySizeException | 数组长度为负异常 |
+| IllegalStateException | 非法状态异常 |
+| ClassCastException | 类型转换异常 |
 
 
 
