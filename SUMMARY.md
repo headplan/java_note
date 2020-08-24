@@ -115,7 +115,7 @@
   * [Java接口和抽象类](javashou-ce/javajie-kou-he-chou-xiang-lei.md)
   * [Java异常](javashou-ce/javayi-chang.md)
   * [Java内部类](javashou-ce/javanei-bu-lei.md)
-  * Java集合
+  * [Java集合](javashou-ce/javaji-he.md)
   * Java泛型
   * Java反射
   * Java枚举
