@@ -17,5 +17,18 @@ for (int i = 0; i < arrayList.size(); i++) {
 }
 ```
 
+这段程序不能正常运行 , 原因是Integer类型不能直接强制转换为String类型 : 
 
+```
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+```
+
+如果我们用泛型进行改写后 , 示例代码如下
+
+```java
+List<String> arrayList = new ArrayList<String>();
+arrayList.add(100);
+```
+
+这段代码在编译期间就会报错 , 编译器会在编一阶段就
 
