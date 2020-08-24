@@ -22,5 +22,11 @@ for (Object obj:list) {}
 
 **其他遍历方式**
 
+jdk 1.8之前`Iterator`只有iterator一个方法 , 就是
+
+```java
+Iterator<T> iterator();
+```
+
 
 
