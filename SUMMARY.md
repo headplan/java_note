@@ -114,7 +114,7 @@
   * [Java访问控制权限](javashou-ce/javafang-wen-kong-zhi-quan-xian.md)
   * [Java接口和抽象类](javashou-ce/javajie-kou-he-chou-xiang-lei.md)
   * [Java异常](javashou-ce/javayi-chang.md)
-  * Java内部类
+  * [Java内部类](javashou-ce/javanei-bu-lei.md)
   * Java集合
   * Java泛型
   * Java反射
