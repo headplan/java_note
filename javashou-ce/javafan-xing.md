@@ -61,12 +61,26 @@ public class GenericDemo<T> {
 
 #### 用泛型表示接口
 
-泛型接口与泛型类的定义及使用基本相同 . 
+泛型接口与泛型类的定义及使用基本相同 .
 
 ```java
 // 定义一个泛型接口
 public interface Generator<T> {
     public T next();
+}
+```
+
+一般泛型接口常用于`生成器(generator)`中 , 生成器相当于对象工厂 , 是一种专门用来创建对象的类 . 
+
+#### 泛型方法
+
+可以使用泛型来表示方法
+
+```java
+public class GenericMethods {
+    public <T> void f(T x) {
+        System.out.println(x.getClass().getName());
+    }
 }
 ```
 
