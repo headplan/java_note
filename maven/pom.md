@@ -124,5 +124,3 @@ Maven 将会开始处理并显示 effective-pom .
 
 上面的effective-pom就是 Maven 在执行目标时需要用到的默认工程源码目录结构、输出目录、需要的插件、仓库和报表目录 , 也就是Maven完整/实际/生效\(effective\)的pom.xml文件 .
 
-啊
-
