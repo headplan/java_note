@@ -106,5 +106,7 @@ public static void generic(List<?> data) {
 }
 ```
 
+**下界通配符 - **&lt;? extends ClassType&gt; 该通配符为 ClassType 的所有子类型 . 它表示的是任何类型都是 ClassType 类型的子类 . 
 
+**上界通配符 - ** &lt;? super ClassType&gt; 该通配符为 ClassType 的所有超类型 . 它表示的是任何类型的父类都是 ClassType . 
 
