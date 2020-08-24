@@ -17,7 +17,7 @@ for (int i = 0; i < arrayList.size(); i++) {
 }
 ```
 
-这段程序不能正常运行 , 原因是Integer类型不能直接强制转换为String类型 : 
+这段程序不能正常运行 , 原因是Integer类型不能直接强制转换为String类型 :
 
 ```
 java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
@@ -30,5 +30,34 @@ List<String> arrayList = new ArrayList<String>();
 arrayList.add(100);
 ```
 
-这段代码在编译期间就会报错 , 编译器会在编一阶段就
+这段代码在编译期间就会报错 , 编译器会在编译阶段就能够帮我们发现类似这样的问题 . 
+
+### 泛型的使用
+
+#### 用泛型表示类
+
+泛型可以加到类上面 , 来表示这个类的类型
+
+```java
+// 此处T可以随便写为任意标识,常见的如T、E、K、V等形式的参数常用于表示泛型
+public class GenericDemo<T> {
+    // value这个成员变量的类型为T,T的类型由外部执行
+    private T value;
+    
+    public GenericDemo(T value) {
+        this.value = value;
+    }
+    
+    // 泛型方法getKey的返回值类型为T,T的类型由外部指定
+    public T getValue() {
+        return value;
+    }
+    
+    public void setValue(T value) {
+        this.value = value
+    }
+}
+```
+
+
 
