@@ -30,7 +30,7 @@ List<String> arrayList = new ArrayList<String>();
 arrayList.add(100);
 ```
 
-这段代码在编译期间就会报错 , 编译器会在编译阶段就能够帮我们发现类似这样的问题 . 
+这段代码在编译期间就会报错 , 编译器会在编译阶段就能够帮我们发现类似这样的问题 .
 
 ### 泛型的使用
 
@@ -43,19 +43,30 @@ arrayList.add(100);
 public class GenericDemo<T> {
     // value这个成员变量的类型为T,T的类型由外部执行
     private T value;
-    
+
     public GenericDemo(T value) {
         this.value = value;
     }
-    
+
     // 泛型方法getKey的返回值类型为T,T的类型由外部指定
     public T getValue() {
         return value;
     }
-    
+
     public void setValue(T value) {
         this.value = value
     }
+}
+```
+
+#### 用泛型表示接口
+
+泛型接口与泛型类的定义及使用基本相同 . 
+
+```java
+// 定义一个泛型接口
+public interface Generator<T> {
+    public T next();
 }
 ```
 
