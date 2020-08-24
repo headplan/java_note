@@ -34,3 +34,13 @@ Iterator<T> iterator();
 
 总之一点就是能创建迭代器进行元素的添加和删除的话 , 就尽量使用迭代器进行添加和删除 . 
 
+也可以使用迭代器的方式进行遍历 : 
+
+```java
+for (Iterator it = coll.iterator(); it.hasNext();) {
+    System.out.println(it.next());
+}
+```
+
+
+
