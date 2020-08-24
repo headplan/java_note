@@ -1,7 +1,7 @@
 # Summary
 
 * [关于](README.md)
-* [Java相关书单](javaxiang-guan-shu-dan.md)
+* [Java相关资料](javaxiang-guan-shu-dan.md)
 * [对象导论](dui-xiang-dao-lun.md)
   * [抽象过程](dui-xiang-dao-lun/chou-xiang-guo-cheng.md)
   * [每个对象都有一个接口](dui-xiang-dao-lun/mei-ge-dui-xiang-du-you-yi-ge-jie-kou.md)
