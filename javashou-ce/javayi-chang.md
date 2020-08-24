@@ -125,3 +125,11 @@ static void cacheException() throws Exception {
 
 try...catch...finally也是一样的 , 表示对异常捕获后 , 再走finally中的代码逻辑 . 
 
+#### 什么是Error
+
+Error是程序无法处理的错误 , 表示运行应用程序中较严重问题 . 大多数错误与代码编写者执行的操作无关 , 而表示代码运行时JVM\(Java虚拟机\)出现的问题 . 这些错误是不可检查的 , 因为它们在应用程序的控制和处理能力之外 , 而且绝大多数是程序运行时不允许出现的状况 , 比如`OutOfMemoryError` 和`StackOverflowError`异常的出现会有几种情况 . 
+
+先来看看JDK1.7的内存模型 : 
+
+![](/assets/neicunmoxing17.png)
+
