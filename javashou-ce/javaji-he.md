@@ -32,15 +32,17 @@ Iterator<T> iterator();
 
 > fail-fast 机制是java集合\(Collection\)中的一种错误机制 . 当多个线程对同一个集合的内容进行操作时 , 就可能会产生fail-fast事件 . 例如 : 当某一个线程A通过iterator去遍历某集合的过程中 , 若该集合的内容被其他线程所改变了 ; 那么线程A访问集合时 , 就会抛出ConcurrentModificationException异常 , 产生fail-fast事件 .
 
-总之一点就是能创建迭代器进行元素的添加和删除的话 , 就尽量使用迭代器进行添加和删除 . 
+总之一点就是能创建迭代器进行元素的添加和删除的话 , 就尽量使用迭代器进行添加和删除 .
 
-也可以使用迭代器的方式进行遍历 : 
+也可以使用迭代器的方式进行遍历 :
 
 ```java
 for (Iterator it = coll.iterator(); it.hasNext();) {
     System.out.println(it.next());
 }
 ```
+
+#### 顶层接口
 
 
 
