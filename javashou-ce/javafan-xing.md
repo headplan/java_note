@@ -70,7 +70,7 @@ public interface Generator<T> {
 }
 ```
 
-一般泛型接口常用于`生成器(generator)`中 , 生成器相当于对象工厂 , 是一种专门用来创建对象的类 . 
+一般泛型接口常用于`生成器(generator)`中 , 生成器相当于对象工厂 , 是一种专门用来创建对象的类 .
 
 #### 泛型方法
 
@@ -81,6 +81,28 @@ public class GenericMethods {
     public <T> void f(T x) {
         System.out.println(x.getClass().getName());
     }
+}
+```
+
+#### 泛型通配符
+
+List 是泛型类 , 为了表示各种泛型 List 的父类 , 可以使用类型通配符 , 类型通配符使用`问号(?)`表示 , 它的元素类型可以匹配任何类型 . 例如
+
+```java
+public static void main(String[] args) {
+    List<String> name = new ArrayList<String>();
+    List<Integer> age = new ArrayList<Integer>();
+    List<Number> number = new ArrayList<Number>();
+    name.add("cxuan");
+    age.add(18);
+    number.add(314);
+    generic(name);
+    generic(age);
+    generic(number);   
+}
+
+public static void generic(List<?> data) {
+    System.out.println("Test cxuan :" + data.get(0));
 }
 ```
 
