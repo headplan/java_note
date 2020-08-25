@@ -8,8 +8,8 @@ Maven 是一个项目管理工具 , 可以对 Java 项目进行构建、依赖�
 
 Maven 中的有两大核心 :
 
-* 依赖管理 : 对 jar 的统一管理\(Maven 提供了一个 Maven 的中央仓库 , [https://mvnrepository.com/](https://mvnrepository.com/) , 当我们在项目中添加完依赖之后 , Maven 会自动去中央仓库下载相关的依赖 , 并且解决依赖的依赖问题\)
-* 项目构建 : 对项目进行编译、测试、打包、部署、上传到私服等
+* **依赖管理** : 对 jar 的统一管理\(Maven 提供了一个 Maven 的中央仓库 , [https://mvnrepository.com/](https://mvnrepository.com/) , 当我们在项目中添加完依赖之后 , Maven 会自动去中央仓库下载相关的依赖 , 并且解决依赖的依赖问题\)
+* **项目构建** : 对项目进行编译、测试、打包、部署、上传到私服等
 
 ## Maven 功能
 
