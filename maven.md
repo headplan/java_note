@@ -92,9 +92,9 @@ Maven 提倡使用一个共同的标准目录结构 , Maven 使用约定优于�
 
 ### Maven的核心概念
 
-POM - 就是pom.xml文件 , 自动化构建的配置文件\(Project Object Model : 项目对象模型\) . 
+POM - 就是pom.xml文件 , 自动化构建的配置文件\(Project Object Model : 项目对象模型\) .
 
 约定的目录结构 - Maven项目是有约定的标准目录结构 , 约定优于配置的原则 . 
 
-
+坐标 - pom.xml里设置的依赖的jar包 , 坐标就是一个路径 , 指向本地仓库 , 本地仓库没有 , 就从中央仓库下载 . 
 
