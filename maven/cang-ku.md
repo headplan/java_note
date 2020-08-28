@@ -95,9 +95,9 @@ Maven 中央仓库是由 Maven 社区提供的仓库 , 其中包含了大量常�
 
 #### Maven阿里云\(Aliyun\)仓库
 
-Maven仓库默认在国外 , 国内使用难免很慢 , 我们可以更换为阿里云的仓库 . 
+Maven仓库默认在国外 , 国内使用难免很慢 , 我们可以更换为阿里云的仓库 .
 
-第一步 : 修改maven根目录下的conf文件夹中的setting.xml文件 , 在mirrors节点上 , 添加内容如下 : 
+第一步 : 修改maven根目录下的conf文件夹中的setting.xml文件 , 在mirrors节点上 , 添加内容如下 :
 
 ```XML
 <mirrors>
@@ -108,6 +108,24 @@ Maven仓库默认在国外 , 国内使用难免很慢 , 我们可以更换为阿
       <mirrorOf>central</mirrorOf>        
     </mirror>
 </mirrors>
+```
+
+第二步 : pom.xml文件里添加
+
+```XML
+<repositories>  
+    <repository>  
+        <id>alimaven</id>  
+        <name>aliyun maven</name>  
+        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+        <releases>  
+            <enabled>true</enabled>  
+        </releases>  
+        <snapshots>  
+            <enabled>false</enabled>  
+        </snapshots>  
+    </repository>  
+</repositories>
 ```
 
 
