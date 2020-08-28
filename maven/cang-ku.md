@@ -86,12 +86,29 @@ Maven 中央仓库是由 Maven 社区提供的仓库 , 其中包含了大量常�
 
 #### Maven依赖搜索顺序
 
-当我们执行Maven构建命令时 , Maven 开始按照以下顺序查找依赖的库 : 
+当我们执行Maven构建命令时 , Maven 开始按照以下顺序查找依赖的库 :
 
 * **步骤 1** - 在本地仓库中搜索 , 如果找不到 , 执行步骤 2 , 如果找到了则执行其他操作
 * **步骤 2** - 在中央仓库中搜索 , 如果找不到 , 并且有一个或多个远程仓库已经设置 , 则执行步骤 4 , 如果找到了则下载到本地仓库中以备将来引用 . 
 * **步骤 3** - 如果远程仓库没有被设置 , Maven将简单的停滞处理并抛出错误\(无法找到依赖的文件\) . 
 * **步骤 4** - 在一个或多个远程仓库中搜索依赖的文件 , 如果找到则下载到本地仓库以备将来引用 , 否则Maven将停止处理并抛出错误\(无法找到依赖的文件\) . 
+
+#### Maven阿里云\(Aliyun\)仓库
+
+Maven仓库默认在国外 , 国内使用难免很慢 , 我们可以更换为阿里云的仓库 . 
+
+第一步 : 修改maven根目录下的conf文件夹中的setting.xml文件 , 在mirrors节点上 , 添加内容如下 : 
+
+```XML
+<mirrors>
+    <mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <mirrorOf>central</mirrorOf>        
+    </mirror>
+</mirrors>
+```
 
 
 
