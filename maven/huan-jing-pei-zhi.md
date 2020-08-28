@@ -13,15 +13,15 @@ Maven 是一个基于 Java 的工具 , 所以要做的第一件事情就是安�
 #### 设置Maven环境变量
 
 ```
-# wget http://mirrors.hust.edu.cn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-# tar -xvf  apache-maven-3.3.9-bin.tar.gz
-# sudo mv -f apache-maven-3.3.9 /usr/local/
+# wget http://mirrors.hust.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+# tar -xvf  apache-maven-3.6.3-bin.tar.gz
+# sudo mv -f apache-maven-3.6.3 /usr/local/
 ```
 
 编辑**/etc/profile**文件
 
 ```bash
-export MAVEN_HOME=/usr/local/apache-maven-3.3.9
+export MAVEN_HOME=/usr/local/apache-maven-3.6.3
 export PATH=${PATH}:${MAVEN_HOME}/bin
 ```
 
