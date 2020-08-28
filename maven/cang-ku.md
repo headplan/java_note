@@ -16,13 +16,13 @@ Maven仓库有三种类型 :
 
 #### 本地仓库
 
-Maven的本地仓库 , 在安装 Maven 后并不会创建 , 它是在第一次执行 maven 命令的时候才被创建 . 
+Maven的本地仓库 , 在安装 Maven 后并不会创建 , 它是在第一次执行 maven 命令的时候才被创建 .
 
-运行 Maven 的时候 , Maven 所需要的任何构件都是直接从本地仓库获取的 . 如果本地仓库没有 , 它会首先尝试从远程仓库下载构件至本地仓库 , 然后再使用本地仓库的构件 . 
+运行 Maven 的时候 , Maven 所需要的任何构件都是直接从本地仓库获取的 . 如果本地仓库没有 , 它会首先尝试从远程仓库下载构件至本地仓库 , 然后再使用本地仓库的构件 .
 
-默认情况下 , 不管Linux还是 Windows , 每个用户在自己的用户目录下都有一个路径名为 .m2/respository/ 的仓库目录 . 
+默认情况下 , 不管Linux还是 Windows , 每个用户在自己的用户目录下都有一个路径名为 .m2/respository/ 的仓库目录 .
 
-Maven 本地仓库默认被创建在 %USER\_HOME% 目录下 . 要修改默认位置 . 在 %M2\_HOME%\conf 目录中的 Maven 的 settings.xml 文件中定义另一个路径 . 
+Maven 本地仓库默认被创建在 %USER\_HOME% 目录下 . 要修改默认位置 . 在 %M2\_HOME%\conf 目录中的 Maven 的 settings.xml 文件中定义另一个路径 .
 
 ```XML
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -33,5 +33,5 @@ Maven 本地仓库默认被创建在 %USER\_HOME% 目录下 . 要修改默认位
 </settings>
 ```
 
-
+当你运行 Maven 命令 , Maven 将下载依赖的文件到你指定的路径中 . 
 
