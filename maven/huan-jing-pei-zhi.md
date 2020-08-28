@@ -35,5 +35,7 @@ export PATH=${PATH}:${MAVEN_HOME}/bin
 mvn -v
 ```
 
+#### 配置本地仓库
+
 
 
