@@ -33,21 +33,56 @@ Maven 本地仓库默认被创建在 %USER\_HOME% 目录下 . 要修改默认位
 </settings>
 ```
 
-当你运行 Maven 命令 , Maven 将下载依赖的文件到你指定的路径中 . 
+当你运行 Maven 命令 , Maven 将下载依赖的文件到你指定的路径中 .
 
 #### 中央仓库
 
-Maven 中央仓库是由 Maven 社区提供的仓库 , 其中包含了大量常用的库 . 
+Maven 中央仓库是由 Maven 社区提供的仓库 , 其中包含了大量常用的库 .
 
-中央仓库包含了绝大多数流行的开源Java构件 , 以及源码、作者信息、SCM、信息、许可证信息等 . 一般来说 , 简单的Java项目依赖的构件都可以在这里下载到 . 
+中央仓库包含了绝大多数流行的开源Java构件 , 以及源码、作者信息、SCM、信息、许可证信息等 . 一般来说 , 简单的Java项目依赖的构件都可以在这里下载到 .
 
-中央仓库的关键概念 : 
+中央仓库的关键概念 :
 
 * 这个仓库由 Maven 社区管理
 * 不需要配置
 * 需要通过网络才能访问
 
 要浏览中央仓库的内容 , maven 社区提供了一个 URL : [http://search.maven.org/\#browse](http://search.maven.org/#browse) . 使用这个仓库 , 开发人员可以搜索所有可以获取的代码库 . 
+
+#### 远程仓库
+
+如果 Maven 在中央仓库中也找不到依赖的文件 , 它会停止构建过程并输出错误信息到控制台 . 为避免这种情况 , Maven 提供了远程仓库的概念 , 它是开发人员自己定制仓库 , 包含了所需要的代码库或者其他工程中用到的 jar 文件 . 
+
+举例说明 , 使用下面的 pom.xml , Maven 将从远程仓库中下载该 pom.xml 中声明的所依赖的\(在中央仓库中获取不到的\)文件 . 
+
+```XML
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+   http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.companyname.projectgroup</groupId>
+   <artifactId>project</artifactId>
+   <version>1.0</version>
+   <dependencies>
+      <dependency>
+         <groupId>com.companyname.common-lib</groupId>
+         <artifactId>common-lib</artifactId>
+         <version>1.0.0</version>
+      </dependency>
+   <dependencies>
+   <repositories>
+      <repository>
+         <id>companyname.lib1</id>
+         <url>http://download.companyname.org/maven2/lib1</url>
+      </repository>
+      <repository>
+         <id>companyname.lib2</id>
+         <url>http://download.companyname.org/maven2/lib2</url>
+      </repository>
+   </repositories>
+</project>
+```
 
 
 
