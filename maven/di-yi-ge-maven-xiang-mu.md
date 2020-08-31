@@ -29,7 +29,7 @@ resources目录用于存放配置文件和资源文件 .
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.test.maven</groupId>
+    <groupId>org.lartisan.maven</groupId>
     <artifactId>Hello</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Hello</name>
@@ -45,6 +45,18 @@ resources目录用于存放配置文件和资源文件 .
 ```
 
 #### 编写主代码
+
+在`./src/main/java/org/lartisan/maven`目录下新建文件Hello.java
+
+```java
+package org.lartisan.maven;
+
+public class Hello {
+    public String sayHello(String name) {
+        return "Hello " + name + "!";
+    }
+}
+```
 
 
 
