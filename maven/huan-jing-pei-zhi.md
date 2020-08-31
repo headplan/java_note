@@ -37,5 +37,11 @@ mvn -v
 
 #### 配置本地仓库
 
+Maven默认的本地仓库
+
+```XML
+~/.m2/repository/
+```
+
 
 
