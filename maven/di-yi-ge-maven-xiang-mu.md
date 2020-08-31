@@ -73,7 +73,7 @@ import static junit.framework.Assert.*;
 
 public class HelloTest {
     @Test
-    public void testHello() {
+    public void testSayHello() {
         Hello hello = new Hello();
 
         String result = hello.sayHello("小明");
