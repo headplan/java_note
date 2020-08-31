@@ -58,5 +58,30 @@ public class Hello {
 }
 ```
 
+#### 编写测试代码
+
+在`./src/test/java/org/lartisan/maven`目录下新建测试文件HelloTest.java
+
+```java
+package org.lartisan.maven;
+
+import org.junit.Test;
+
+import jdk.nashorn.internal.AssertsEnabled;
+
+import static junit.framework.Assert.*;
+
+public class HelloTest {
+    @Test
+    public void testHello() {
+        Hello hello = new Hello();
+
+        String result = hello.sayHello("小明");
+
+        assertEquals("Hello 小明", result); // 断言
+    }
+}
+```
+
 
 
