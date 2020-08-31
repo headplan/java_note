@@ -90,6 +90,7 @@
     * [JDBC配置多数据源](springkuang-jia/jdbc/pei-zhi-duo-shu-ju-yuan.md)
 * [Maven](maven.md)
   * [环境配置](maven/huan-jing-pei-zhi.md)
+  * [第一个Maven项目](maven/di-yi-ge-maven-xiang-mu.md)
   * [POM](maven/pom.md)
     * [POM标签详解](maven/pom/pombiao-qian-xiang-jie.md)
   * [构建生命周期](maven/gou-jian-sheng-ming-zhou-qi.md)
@@ -103,7 +104,7 @@
   * [构建项目测试](maven/gou-jian-xiang-mu-ce-shi.md)
   * [引入外部依赖](maven/yin-ru-wai-bu-yi-lai.md)
   * [项目模板](maven/xiang-mu-mo-ban.md)
-  * [项目文档](maven/xiang-mu-wen-dang.md)
+  * 第一个Maven项目
 * [Gradle](gradle.md)
 * [Java手册](javashou-ce.md)
   * [Java概述](javashou-ce/javagai-shu.md)
