@@ -78,10 +78,22 @@ public class HelloTest {
 
         String result = hello.sayHello("小明");
 
-        assertEquals("Hello 小明", result); // 断言
+        assertEquals("Hello 小明!", result); // 断言
     }
 }
 ```
+
+#### 运行几个基本的Maven命令
+
+运行Maven命令时 , 一定要进入pom.xml文件所在的目录 . 
+
+```
+mvn compile 编译
+mvn clean
+mvn clean compile
+```
+
+
 
 
 
