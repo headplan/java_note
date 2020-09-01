@@ -125,4 +125,5 @@
   * 关于 null 的几种处理方式
   * 常用思维导图
 * [错误收集](cuo-wu-shou-ji.md)
+  * [Maven编译错误 . 不再支持源选项 5 , 请使用 6 或更高版本](cuo-wu-shou-ji/mavenbian-yi-cuo-wu-bu-zai-zhi-chi-yuan-xuan-xiang-5-qing-shi-yong-6-huo-geng-gao-ban-ben.md)
 
