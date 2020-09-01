@@ -1,6 +1,6 @@
 # Maven编译错误 . 不再支持源选项 5 , 请使用 7 或更高版本
 
-在使用apache-maven-3.6.3编译时编译报错 : 
+在使用apache-maven-3.6.3编译时编译报错 :
 
 ```
 [ERROR] COMPILATION ERROR :
@@ -22,10 +22,16 @@
 
 #### 原因分析
 
-本地使用的是openjdk version "11.0.7" , 并没有修改setting.xml或pom.xml , 没有使用指定参数 , 那就是maven自动使用了默认参数 . 查看Debug . 
+本地使用的是openjdk version "11.0.7" , 并没有修改setting.xml或pom.xml , 没有使用指定参数 , 那就是maven自动使用了默认参数 . 查看Debug .
 
 ```java
 mvn -debug compile
+```
+
+在debug信息中可以查看到如下信息 : 
+
+```
+-g -nowarn -target 1.5 -source 1.5
 ```
 
 
