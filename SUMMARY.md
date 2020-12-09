@@ -119,7 +119,7 @@
   * [Java集合](javashou-ce/javaji-he.md)
   * [Java泛型](javashou-ce/javafan-xing.md)
   * [Java反射](javashou-ce/javafan-she.md)
-  * Java枚举
+  * [Java枚举](javashou-ce/javamei-ju.md)
   * JavaI/O
   * Java注解
   * 关于 null 的几种处理方式
