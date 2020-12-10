@@ -4,6 +4,12 @@
 
 **Java**2平台有3个版本 , 它们是适用于小型设备和智能卡的**Java**2平台Micro版\(**Java**2 Platform Micro Edition , **Java**ME\)、适用于桌面系统的Java 2平台标准版\(**Java**2 Platform Standard Edition，Java SE\)、适用于创建服务器应用程序和服务的Java2平台企业版\(**Java**2 Platform Enterprise Edition , Java EE\) .
 
+笼统的讲 , 可以这样理解：
+
+* J2SE是基础 ; 
+* 压缩一点 , 再增加一些CLDC等方面的特性就是J2ME ; 
+* 扩充一点 , 再增加一些EJB等企业应用方面的特性就是J2EE . 
+
 #### **企业版\(Java EE\)**
 
 > Enterprise Edition\(企业版\) J2EE 包含J2SE 中的类 , 并且还包含用于开发企业级应用的类 . 比如 : EJB、servlet、JSP、XML、事务控制
