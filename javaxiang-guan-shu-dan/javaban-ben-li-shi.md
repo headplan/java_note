@@ -10,6 +10,8 @@
 * 压缩一点 , 再增加一些CLDC等方面的特性就是J2ME ; 
 * 扩充一点 , 再增加一些EJB等企业应用方面的特性就是J2EE . 
 
+J2SE包含于J2EE中 , J2ME包含了J2SE的核心类 , 但新添加了一些专有类 . 
+
 #### **企业版\(Java EE\)**
 
 > Enterprise Edition\(企业版\) J2EE 包含J2SE 中的类 , 并且还包含用于开发企业级应用的类 . 比如 : EJB、servlet、JSP、XML、事务控制
