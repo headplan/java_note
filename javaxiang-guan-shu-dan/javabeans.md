@@ -13,13 +13,21 @@
 * 有一个public默认构造器\(例如无参构造器\)属性使用public的get , set方法访问 , 也就是说设置成private , 同时get , set方法与属性名的大小也需要对应 . 例如属性name , get方法就要写成 , `public String getName(){}` .
 * 需要序列化 . 这个是框架 , 工具跨平台反映状态必须的 .
 
-`<Think in Java>`里面讲到JavaBean最初是为Java GUI的可视化编程实现的 . 拖动IDE构建工具创建一个GUI组件\(如多选框\) , 其实是工具给你创建java类 , 并提供将类的属性暴露出来给你修改调整 , 将事件监听器暴露出来 . 
+`<Think in Java>`里面讲到JavaBean最初是为Java GUI的可视化编程实现的 . 拖动IDE构建工具创建一个GUI组件\(如多选框\) , 其实是工具给你创建java类 , 并提供将类的属性暴露出来给你修改调整 , 将事件监听器暴露出来 .
 
 #### EJB
 
-在企业开发中 , 需要可伸缩的性能和事务、安全机制 , 这样能保证企业系统平滑发展 , 而不是发展到一种规模重新更换一套软件系统 . 然后有提高了协议要求 , 就出现了Enterprise Bean . EJB在javabean基础上又提了一些要求 , 当然更复杂了 . 
+在企业开发中 , 需要可伸缩的性能和事务、安全机制 , 这样能保证企业系统平滑发展 , 而不是发展到一种规模重新更换一套软件系统 . 然后有提高了协议要求 , 就出现了Enterprise Bean . EJB在javabean基础上又提了一些要求 , 当然更复杂了 .
 
 #### POJO
 
-有个叫Josh MacKenzie人觉得 , EJB太复杂了 , 完全没必要每次都用 , 所以发明了个POJO , POJO是普通的javabean , 什么是普通就是和EJB对应的 . 总之 , 区别就是 , 先判断是否满足javabean的条件 , 然后如果再实现一些要求 , 满足EJB条件就是EJB , 否则就是POJO . 
+有个叫Josh MacKenzie人觉得 , EJB太复杂了 , 完全没必要每次都用 , 所以发明了个POJO , POJO是普通的javabean , 什么是普通就是和EJB对应的 . 总之 , 区别就是 , 先判断是否满足javabean的条件 , 然后如果再实现一些要求 , 满足EJB条件就是EJB , 否则就是POJO .
+
+#### 其他
+
+* **PO\(persistence object\)** - 用于持久化时\(例如保存到数据库或者缓存\) ; 
+* **VO\(value object\)** - 用于前端展示使用\(例如放置到JSP中解析或者给前端传递数据\) ; 
+* **DTO\(data transfer object\)** : 用于接口互相调用返回,数据传输\(例如很多接口调用返回值或消息队列内容\) ; 
+
+
 
