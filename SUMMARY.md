@@ -5,6 +5,7 @@
   * [Java版本历史](javaxiang-guan-shu-dan/javaban-ben-li-shi.md)
   * [JavaEE](javaxiang-guan-shu-dan/javaee.md)
   * [J2EE的13个规范](javaxiang-guan-shu-dan/j2eede-13-ge-gui-fan.md)
+  * [Java Bean](javaxiang-guan-shu-dan/javabeans.md)
   * [J2EE和Spring](javaxiang-guan-shu-dan/j2eehe-spring.md)
   * [Spring](javaxiang-guan-shu-dan/spring.md)
 * [对象导论](dui-xiang-dao-lun.md)
