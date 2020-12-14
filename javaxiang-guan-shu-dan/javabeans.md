@@ -29,5 +29,11 @@
 * **VO\(value object\)** - 用于前端展示使用\(例如放置到JSP中解析或者给前端传递数据\) ; 
 * **DTO\(data transfer object\)** : 用于接口互相调用返回,数据传输\(例如很多接口调用返回值或消息队列内容\) ; 
 
+Java语言欠缺属性、事件、多重继承功能 . 所以 , 如果要在Java程序中实现一些面向对象编程的常见需求 , 只能手写大量胶水代码 . Java Bean正是编写这套胶水代码的惯用模式或约定 . 这些约定包括getXxx、setXxx、isXxx、addXxxListener、XxxEvent等 . 遵守上述约定的类可以用于若干工具或库 . 
+
+  
+
+
+  
 
 
