@@ -74,14 +74,16 @@ public final class JavaIntList {
 }
 ```
 
-然后发布了2.0版 : java-int-list\_2.0.jar . 发布后 , 原有java-int-list\_1.0.jar的用户纷纷升级版本到2.0 . 这些用户一升级 , 就发现自己的程序全部坏掉了 , 说是找不到什么size变量 . 于是这些用户就把作者暴打一顿 , 再也不敢用java-int-list库了 . 
+然后发布了2.0版 : java-int-list\_2.0.jar . 发布后 , 原有java-int-list\_1.0.jar的用户纷纷升级版本到2.0 . 这些用户一升级 , 就发现自己的程序全部坏掉了 , 说是找不到什么size变量 . 于是这些用户就把作者暴打一顿 , 再也不敢用java-int-list库了 .
 
-所以Java标准库中 , 绝对不会出现public int size这样的代码 , 而一定会一开始就写成 : 
+所以Java标准库中 , 绝对不会出现public int size这样的代码 , 而一定会一开始就写成 :
 
 ```java
 private int size;
 public int getSize() { return size; }
 ```
 
+让用户一开始就使用getSize , 以便有朝一日修改getSize实现时 , 不破坏向后兼容性 . 这种`public int getSize() { return size; }`的惯用手法 , 就是Java Bean . 
 
+现在 , C\#、Scala等比Java新的面向对象语言自身就提供了语言特性来实现这些常用需求 , 所以根本不需要Java Bean这样繁琐的约定 . 
 
