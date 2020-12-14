@@ -63,13 +63,13 @@ J2EE能够开发部署在异构环境中的可移植程序 . 基于J2EE的应用
 
 #### J2EE应用程序组件
 
-J2EE应用程序是由组件构成的 . J2EE组件是具有独立功能的软件单元 , 它们通过相关的类和文件组装成J2EE应用程序 , 并与其他组件交互 . J2EE说明书中定义了以下的J2EE组件 : 
+J2EE应用程序是由组件构成的 . J2EE组件是具有独立功能的软件单元 , 它们通过相关的类和文件组装成J2EE应用程序 , 并与其他组件交互 . J2EE说明书中定义了以下的J2EE组件 :
 
-应用客户端程序和applets是客户层组件.
+* 应用客户端程序和applets是客户层组件.
+* Java Servlet和JavaServer Pages\(JSP\)是web层组件.
+* Enterprise JavaBeans\(EJB\)是业务层组件.
 
-Java Servlet和JavaServer Pages\(JSP\)是web层组件.
+**客户层组件**
 
-Enterprise JavaBeans\(EJB\)是业务层组件.
-
-
+J2EE应用程序可以是基于web方式的 , 也可以是基于传统方式的 . 
 
