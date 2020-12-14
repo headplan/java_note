@@ -52,7 +52,7 @@ JavaIntList myList = new JavaIntList();
 System.out.println(myList.size);
 ```
 
-JavaIntList的作者很满意 , 于是开源了java-int-list库的1.0版 . 文件名是java-int-list\_1.0.jar . 发布后 , 吸引了许多用户来使用java-int-list\_1.0.jar . 有一天 , 作者决定要节省内存 , 不要缓存size变量了 , 把代码改成这样 : 
+JavaIntList的作者很满意 , 于是开源了java-int-list库的1.0版 . 文件名是java-int-list\_1.0.jar . 发布后 , 吸引了许多用户来使用java-int-list\_1.0.jar . 有一天 , 作者决定要节省内存 , 不要缓存size变量了 , 把代码改成这样 :
 
 ```java
 // 编译成 java-int-list_2.0.jar
@@ -72,6 +72,15 @@ public final class JavaIntList {
     return i;
   }
 }
+```
+
+然后发布了2.0版 : java-int-list\_2.0.jar . 发布后 , 原有java-int-list\_1.0.jar的用户纷纷升级版本到2.0 . 这些用户一升级 , 就发现自己的程序全部坏掉了 , 说是找不到什么size变量 . 于是这些用户就把作者暴打一顿 , 再也不敢用java-int-list库了 . 
+
+所以Java标准库中 , 绝对不会出现public int size这样的代码 , 而一定会一开始就写成 : 
+
+```java
+private int size;
+public int getSize() { return size; }
 ```
 
 
