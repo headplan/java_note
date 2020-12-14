@@ -45,11 +45,33 @@ public final class JavaIntList {
 }
 ```
 
-上述实现为了能够快速获取链表的大小 , 把链表大小缓存在size变量中 . 
+上述实现为了能够快速获取链表的大小 , 把链表大小缓存在size变量中 .
 
 ```java
 JavaIntList myList = new JavaIntList();
 System.out.println(myList.size);
+```
+
+JavaIntList的作者很满意 , 于是开源了java-int-list库的1.0版 . 文件名是java-int-list\_1.0.jar . 发布后 , 吸引了许多用户来使用java-int-list\_1.0.jar . 有一天 , 作者决定要节省内存 , 不要缓存size变量了 , 把代码改成这样 : 
+
+```java
+// 编译成 java-int-list_2.0.jar
+public final class JavaIntList {
+  static final class Node {
+    public Node next;
+    public int value;
+  }
+  public Node head;
+  public int getSize() {
+    Node n = head;
+    int i = 0;
+    while (n != null) {
+      n = n.next;
+      i++;
+    }
+    return i;
+  }
+}
 ```
 
 
