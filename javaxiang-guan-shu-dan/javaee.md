@@ -71,13 +71,17 @@ J2EE应用程序是由组件构成的 . J2EE组件是具有独立功能的软件
 
 **客户层组件**
 
-J2EE应用程序可以是基于web方式的 , 也可以是基于传统方式的 . 
+J2EE应用程序可以是基于web方式的 , 也可以是基于传统方式的 .
 
 **Web层组件**
 
-J2EE web层组件可以是JSP页面或Servlets . 按照J2EE规范 , 静态的HTML页面和Applets不算是web层组件 . 正如下图所示的客户层那样 , web层可能包含某些JavaBean对象来处理用户输入 , 并把输入发送给运行在业务层上的enterprise bean 来进行处理 . 
+J2EE web层组件可以是JSP页面或Servlets . 按照J2EE规范 , 静态的HTML页面和Applets不算是web层组件 . 正如下图所示的客户层那样 , web层可能包含某些JavaBean对象来处理用户输入 , 并把输入发送给运行在业务层上的enterprise bean 来进行处理 .
 
 ![](/assets/webceng.png)
+
+**业务层组件**
+
+业务层代码的逻辑用来满足银行 , 零售 , 金融等特殊商务领域的需要 , 由运行在业务层上的enterprise bean进行处理 . 下图表明了一个enterprise bean 是如何从客户端程序接收数据 , 进行处理\(如果必要的话\) , 并发送到EIS层储存的 , 这个过程也可以逆向进行 . 有三种企业级的bean : 会话\(session\) beans , 实体\(entity\) beans 和 消息驱动\(message-driven\) beans . 会话bean表示与客户端程序的临时交互 . 当客户端程序执行完后 , 会话bean和相关数据就会消失 . 相反 , 实体bean表示数据库的表中一行永久的记录 . 当客户端程序中止或服务器关闭时 , 就会有潜在的服务保证实体bean的数据得以保存 . 消息驱动 bean 结合了会话bean和JMS的消息监听器的特性 , 允许一个业务层组件异步接收JMS消息 . 
 
 
 
