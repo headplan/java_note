@@ -73,3 +73,11 @@ J2EE应用程序是由组件构成的 . J2EE组件是具有独立功能的软件
 
 J2EE应用程序可以是基于web方式的 , 也可以是基于传统方式的 . 
 
+**Web层组件**
+
+J2EE web层组件可以是JSP页面或Servlets . 按照J2EE规范 , 静态的HTML页面和Applets不算是web层组件 . 正如下图所示的客户层那样 , web层可能包含某些JavaBean对象来处理用户输入 , 并把输入发送给运行在业务层上的enterprise bean 来进行处理 . 
+
+![](/assets/webceng.png)
+
+
+
